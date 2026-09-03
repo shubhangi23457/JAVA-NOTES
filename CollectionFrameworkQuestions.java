@@ -4,9 +4,7 @@ class Main {
 
     public static void main(String[] args) {
 
-          
         // 1. ARRAYLIST
-          
 
         ArrayList<Integer> arrayList = new ArrayList<>();
 
@@ -14,38 +12,35 @@ class Main {
         arrayList.add(30);
         arrayList.add(10);
         arrayList.add(20);
-        arrayList.add(10);       // Duplicate allowed
+        arrayList.add(10); // Duplicate allowed
 
         System.out.println("ArrayList: " + arrayList);
 
         // get() - access using index
         System.out.println("Element at index 1: "
-                           + arrayList.get(1));
+                + arrayList.get(1));
 
         // set() - modify an element
         arrayList.set(1, 100);
 
         System.out.println("After set(): "
-                           + arrayList);
+                + arrayList);
 
         // contains()
         System.out.println("Contains 20: "
-                           + arrayList.contains(20));
+                + arrayList.contains(20));
 
         // size()
         System.out.println("ArrayList size: "
-                           + arrayList.size());
+                + arrayList.size());
 
         // remove()
         arrayList.remove(Integer.valueOf(10));
 
         System.out.println("After removing 10: "
-                           + arrayList);
+                + arrayList);
 
-
-          
         // 2. LINKEDLIST
-          
 
         LinkedList<Integer> linkedList = new LinkedList<>();
 
@@ -55,7 +50,7 @@ class Main {
         linkedList.add(40);
 
         System.out.println("\nLinkedList: "
-                           + linkedList);
+                + linkedList);
 
         // addFirst()
         linkedList.addFirst(10);
@@ -64,15 +59,15 @@ class Main {
         linkedList.addLast(50);
 
         System.out.println("After adding at ends: "
-                           + linkedList);
+                + linkedList);
 
         // getFirst()
         System.out.println("First element: "
-                           + linkedList.getFirst());
+                + linkedList.getFirst());
 
         // getLast()
         System.out.println("Last element: "
-                           + linkedList.getLast());
+                + linkedList.getLast());
 
         // removeFirst()
         linkedList.removeFirst();
@@ -81,47 +76,41 @@ class Main {
         linkedList.removeLast();
 
         System.out.println("After removing from ends: "
-                           + linkedList);
+                + linkedList);
 
-
-          
         // 3. HASHSET
-          
 
         HashSet<Integer> hashSet = new HashSet<>();
 
         hashSet.add(30);
         hashSet.add(10);
         hashSet.add(20);
-        hashSet.add(10);       // Duplicate ignored
+        hashSet.add(10); // Duplicate ignored
 
         System.out.println("\nHashSet: " + hashSet);
 
         // contains()
         System.out.println("Contains 20: "
-                           + hashSet.contains(20));
+                + hashSet.contains(20));
 
         // size()
         System.out.println("HashSet size: "
-                           + hashSet.size());
+                + hashSet.size());
 
         // remove()
         hashSet.remove(10);
 
         System.out.println("After removing 10: "
-                           + hashSet);
+                + hashSet);
 
         // add() returns false for duplicate
         System.out.println("Adding 20 again: "
-                           + hashSet.add(20));
+                + hashSet.add(20));
 
         System.out.println("Adding 50: "
-                           + hashSet.add(50));
+                + hashSet.add(50));
 
-
-          
         // 4. TREESET
-          
 
         TreeSet<Integer> treeSet = new TreeSet<>();
 
@@ -129,40 +118,37 @@ class Main {
         treeSet.add(10);
         treeSet.add(30);
         treeSet.add(20);
-        treeSet.add(10);       // Duplicate ignored
+        treeSet.add(10); // Duplicate ignored
 
         // Automatically sorted
         System.out.println("\nTreeSet: "
-                           + treeSet);
+                + treeSet);
 
         // first()
         System.out.println("First: "
-                           + treeSet.first());
+                + treeSet.first());
 
         // last()
         System.out.println("Last: "
-                           + treeSet.last());
+                + treeSet.last());
 
         // lower()
         System.out.println("Lower than 30: "
-                           + treeSet.lower(30));
+                + treeSet.lower(30));
 
         // higher()
         System.out.println("Higher than 30: "
-                           + treeSet.higher(30));
+                + treeSet.higher(30));
 
         // floor()
         System.out.println("Floor of 25: "
-                           + treeSet.floor(25));
+                + treeSet.floor(25));
 
         // ceiling()
         System.out.println("Ceiling of 25: "
-                           + treeSet.ceiling(25));
+                + treeSet.ceiling(25));
 
-
-          
         // 5. ITERATING THROUGH ALL COLLECTIONS
-          
 
         System.out.println("\nArrayList elements:");
 
@@ -188,39 +174,29 @@ class Main {
             System.out.println(x);
         }
 
-
-          
         // 6. ITERATOR
-          
 
         System.out.println("\nUsing Iterator with ArrayList:");
 
-        Iterator<Integer> iterator =
-            arrayList.iterator();
+        Iterator<Integer> iterator = arrayList.iterator();
 
         while (iterator.hasNext()) {
             System.out.println(iterator.next());
         }
 
-
-          
         // 7. SORTING ARRAYLIST
-          
 
         Collections.sort(arrayList);
 
         System.out.println("\nSorted ArrayList: "
-                           + arrayList);
+                + arrayList);
 
         Collections.reverse(arrayList);
 
         System.out.println("Reversed ArrayList: "
-                           + arrayList);
+                + arrayList);
 
-
-          
         // 8. CLEAR COLLECTIONS
-          
 
         arrayList.clear();
         linkedList.clear();
@@ -236,14 +212,11 @@ class Main {
     }
 }
 
-
 public class CollectionFrameworkQuestions {
 
     public static void main(String[] args) {
 
-          
         // Q1. Create an ArrayList and add elements.
-          
 
         ArrayList<String> names = new ArrayList<>();
 
@@ -253,10 +226,7 @@ public class CollectionFrameworkQuestions {
 
         System.out.println(names);
 
-
-          
         // Q2. Access and modify an ArrayList element.
-          
 
         ArrayList<Integer> numbers = new ArrayList<>();
 
@@ -270,10 +240,7 @@ public class CollectionFrameworkQuestions {
 
         System.out.println(numbers);
 
-
-          
         // Q3. Remove an element from ArrayList.
-          
 
         ArrayList<String> cities = new ArrayList<>();
 
@@ -285,13 +252,9 @@ public class CollectionFrameworkQuestions {
 
         System.out.println(cities);
 
-
-          
         // Q4. Traverse an ArrayList using for-each.
-          
 
-        ArrayList<Integer> marks =
-            new ArrayList<>();
+        ArrayList<Integer> marks = new ArrayList<>();
 
         marks.add(90);
         marks.add(85);
@@ -301,13 +264,9 @@ public class CollectionFrameworkQuestions {
             System.out.println(mark);
         }
 
-
-          
         // Q5. Demonstrate that ArrayList allows duplicates.
-          
 
-        ArrayList<Integer> list =
-            new ArrayList<>();
+        ArrayList<Integer> list = new ArrayList<>();
 
         list.add(10);
         list.add(20);
@@ -316,13 +275,9 @@ public class CollectionFrameworkQuestions {
 
         System.out.println(list);
 
-
-          
         // Q6. Create a LinkedList.
-          
 
-        LinkedList<String> fruits =
-            new LinkedList<>();
+        LinkedList<String> fruits = new LinkedList<>();
 
         fruits.add("Apple");
         fruits.add("Banana");
@@ -333,13 +288,9 @@ public class CollectionFrameworkQuestions {
 
         System.out.println(fruits);
 
-
-          
         // Q7. Demonstrate LinkedList as a Queue.
-          
 
-        Queue<Integer> queue =
-            new LinkedList<>();
+        Queue<Integer> queue = new LinkedList<>();
 
         queue.offer(10);
         queue.offer(20);
@@ -351,13 +302,9 @@ public class CollectionFrameworkQuestions {
 
         System.out.println(queue);
 
-
-          
         // Q8. Create a HashSet and remove duplicates.
-          
 
-        HashSet<Integer> set =
-            new HashSet<>();
+        HashSet<Integer> set = new HashSet<>();
 
         set.add(10);
         set.add(20);
@@ -367,13 +314,9 @@ public class CollectionFrameworkQuestions {
 
         System.out.println(set);
 
-
-          
         // Q9. Create a LinkedHashSet to maintain insertion order.
-          
 
-        LinkedHashSet<String> languages =
-            new LinkedHashSet<>();
+        LinkedHashSet<String> languages = new LinkedHashSet<>();
 
         languages.add("Java");
         languages.add("Python");
@@ -382,13 +325,9 @@ public class CollectionFrameworkQuestions {
 
         System.out.println(languages);
 
-
-          
         // Q10. Create a TreeSet for sorted unique elements.
-          
 
-        TreeSet<Integer> sorted =
-            new TreeSet<>();
+        TreeSet<Integer> sorted = new TreeSet<>();
 
         sorted.add(50);
         sorted.add(10);
@@ -398,13 +337,9 @@ public class CollectionFrameworkQuestions {
 
         System.out.println(sorted);
 
-
-          
         // Q11. Find first and last elements using TreeSet.
-          
 
-        TreeSet<Integer> numbersSet =
-            new TreeSet<>();
+        TreeSet<Integer> numbersSet = new TreeSet<>();
 
         numbersSet.add(40);
         numbersSet.add(10);
@@ -412,40 +347,28 @@ public class CollectionFrameworkQuestions {
         numbersSet.add(20);
 
         System.out.println(
-            "First: " + numbersSet.first()
-        );
+                "First: " + numbersSet.first());
 
         System.out.println(
-            "Last: " + numbersSet.last()
-        );
+                "Last: " + numbersSet.last());
 
-
-          
         // Q12. Create a PriorityQueue.
-          
 
-        PriorityQueue<Integer> pq =
-            new PriorityQueue<>();
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
 
         pq.offer(30);
         pq.offer(10);
         pq.offer(20);
 
         System.out.println(
-            "Highest priority: " + pq.peek()
-        );
+                "Highest priority: " + pq.peek());
 
         System.out.println(
-            "Removed: " + pq.poll()
-        );
+                "Removed: " + pq.poll());
 
-
-          
         // Q13. Create a HashMap.
-          
 
-        HashMap<Integer, String> students =
-            new HashMap<>();
+        HashMap<Integer, String> students = new HashMap<>();
 
         students.put(101, "Alice");
         students.put(102, "Bob");
@@ -453,32 +376,23 @@ public class CollectionFrameworkQuestions {
 
         System.out.println(students);
 
-
-          
         // Q14. Access and update values in HashMap.
-          
 
-        HashMap<String, Integer> marksMap =
-            new HashMap<>();
+        HashMap<String, Integer> marksMap = new HashMap<>();
 
         marksMap.put("Alice", 90);
         marksMap.put("Bob", 85);
 
         System.out.println(
-            marksMap.get("Alice")
-        );
+                marksMap.get("Alice"));
 
         marksMap.put("Alice", 95);
 
         System.out.println(marksMap);
 
-
-          
         // Q15. Demonstrate duplicate keys in HashMap.
-          
 
-        HashMap<Integer, String> map =
-            new HashMap<>();
+        HashMap<Integer, String> map = new HashMap<>();
 
         map.put(1, "Java");
         map.put(2, "Python");
@@ -488,34 +402,24 @@ public class CollectionFrameworkQuestions {
 
         // Key 1 now maps to C++.
 
-
-          
         // Q16. Traverse HashMap using entrySet().
-          
 
-        HashMap<String, Integer> scores =
-            new HashMap<>();
+        HashMap<String, Integer> scores = new HashMap<>();
 
         scores.put("A", 90);
         scores.put("B", 80);
         scores.put("C", 95);
 
-        for (Map.Entry<String, Integer> entry :
-             scores.entrySet()) {
+        for (Map.Entry<String, Integer> entry : scores.entrySet()) {
 
             System.out.println(
-                entry.getKey() + " = " +
-                entry.getValue()
-            );
+                    entry.getKey() + " = " +
+                            entry.getValue());
         }
 
-
-          
         // Q17. Create a LinkedHashMap.
-          
 
-        LinkedHashMap<Integer, String> linkedMap =
-            new LinkedHashMap<>();
+        LinkedHashMap<Integer, String> linkedMap = new LinkedHashMap<>();
 
         linkedMap.put(3, "C");
         linkedMap.put(1, "A");
@@ -525,13 +429,9 @@ public class CollectionFrameworkQuestions {
 
         // Maintains insertion order.
 
-
-          
         // Q18. Create a TreeMap for sorted keys.
-          
 
-        TreeMap<Integer, String> treeMap =
-            new TreeMap<>();
+        TreeMap<Integer, String> treeMap = new TreeMap<>();
 
         treeMap.put(30, "C");
         treeMap.put(10, "A");
@@ -541,13 +441,9 @@ public class CollectionFrameworkQuestions {
 
         // Keys are sorted.
 
-
-          
         // Q19. Sort an ArrayList using Collections.sort().
-          
 
-        ArrayList<Integer> values =
-            new ArrayList<>();
+        ArrayList<Integer> values = new ArrayList<>();
 
         values.add(50);
         values.add(10);
@@ -558,13 +454,9 @@ public class CollectionFrameworkQuestions {
 
         System.out.println(values);
 
-
-          
         // Q20. Reverse an ArrayList.
-          
 
-        ArrayList<Integer> reverseList =
-            new ArrayList<>();
+        ArrayList<Integer> reverseList = new ArrayList<>();
 
         reverseList.add(10);
         reverseList.add(20);

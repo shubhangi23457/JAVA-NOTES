@@ -61,29 +61,25 @@ class Main {
     }
 }
 
-
-// Integer.parseInt("10");   // int
-// Integer.valueOf("10");   // Integer
+// Integer.parseInt("10"); // int
+// Integer.valueOf("10"); // Integer
 
 // ENHANCED FOR LOOP
 // int[] numbers = {10, 20, 30, 40};
 // for (int number : numbers) {
-//     System.out.println(number);
+// System.out.println(number);
 // }
 
 /*
-============================================================
-JAVA WRAPPER CLASSES + AUTOBOXING + UNBOXING
-IMPORTANT CODING QUESTIONS + SOLUTIONS
-============================================================
-*/
+ * ============================================================
+ * JAVA WRAPPER CLASSES + AUTOBOXING + UNBOXING
+ * IMPORTANT CODING QUESTIONS + SOLUTIONS
+ * ============================================================
+ */
 
-
- 
 // 1. AUTOBOXING
 // Question:
 // Convert a primitive int into an Integer using autoboxing.
- 
 
 class Q1_Autoboxing {
     public static void main(String[] args) {
@@ -96,12 +92,9 @@ class Q1_Autoboxing {
     }
 }
 
-
- 
 // 2. UNBOXING
 // Question:
 // Convert an Integer object into a primitive int.
- 
 
 class Q2_Unboxing {
     public static void main(String[] args) {
@@ -114,12 +107,9 @@ class Q2_Unboxing {
     }
 }
 
-
- 
 // 3. EXPLICIT BOXING USING valueOf()
 // Question:
 // Convert an int into an Integer using Integer.valueOf().
- 
 
 class Q3_ValueOf {
     public static void main(String[] args) {
@@ -132,12 +122,9 @@ class Q3_ValueOf {
     }
 }
 
-
- 
 // 4. STRING TO int USING parseInt()
 // Question:
 // Convert a numeric String into a primitive int.
- 
 
 class Q4_ParseInt {
     public static void main(String[] args) {
@@ -150,12 +137,9 @@ class Q4_ParseInt {
     }
 }
 
-
- 
 // 5. STRING TO INTEGER USING valueOf()
 // Question:
 // Convert a numeric String into an Integer object.
- 
 
 class Q5_StringToInteger {
     public static void main(String[] args) {
@@ -168,12 +152,9 @@ class Q5_StringToInteger {
     }
 }
 
-
- 
 // 6. INTEGER TO STRING
 // Question:
 // Convert an Integer object into a String.
- 
 
 class Q6_IntegerToString {
     public static void main(String[] args) {
@@ -186,12 +167,9 @@ class Q6_IntegerToString {
     }
 }
 
-
- 
 // 7. INTEGER TO int
 // Question:
 // Convert an Integer object into primitive int explicitly.
- 
 
 class Q7_IntegerToInt {
     public static void main(String[] args) {
@@ -204,12 +182,9 @@ class Q7_IntegerToInt {
     }
 }
 
-
- 
 // 8. intValue()
 // Question:
 // Demonstrate intValue() with an Integer object.
- 
 
 class Q8_IntValue {
     public static void main(String[] args) {
@@ -222,12 +197,9 @@ class Q8_IntValue {
     }
 }
 
-
- 
 // 9. DOUBLE WRAPPER
 // Question:
 // Convert a double primitive into a Double wrapper.
- 
 
 class Q9_DoubleWrapper {
     public static void main(String[] args) {
@@ -240,12 +212,9 @@ class Q9_DoubleWrapper {
     }
 }
 
-
- 
 // 10. FLOAT WRAPPER
 // Question:
 // Convert a float primitive into a Float wrapper.
- 
 
 class Q10_FloatWrapper {
     public static void main(String[] args) {
@@ -258,12 +227,9 @@ class Q10_FloatWrapper {
     }
 }
 
-
- 
 // 11. LONG WRAPPER
 // Question:
 // Convert a long primitive into a Long wrapper.
- 
 
 class Q11_LongWrapper {
     public static void main(String[] args) {
@@ -276,12 +242,9 @@ class Q11_LongWrapper {
     }
 }
 
-
- 
 // 12. CHARACTER WRAPPER
 // Question:
 // Convert a char into a Character object.
- 
 
 class Q12_CharacterWrapper {
     public static void main(String[] args) {
@@ -294,12 +257,9 @@ class Q12_CharacterWrapper {
     }
 }
 
-
- 
 // 13. BOOLEAN WRAPPER
 // Question:
 // Convert a boolean into a Boolean object.
- 
 
 class Q13_BooleanWrapper {
     public static void main(String[] args) {
@@ -312,12 +272,9 @@ class Q13_BooleanWrapper {
     }
 }
 
-
- 
 // 14. BYTE WRAPPER
 // Question:
 // Convert a byte primitive into a Byte object.
- 
 
 class Q14_ByteWrapper {
     public static void main(String[] args) {
@@ -330,12 +287,9 @@ class Q14_ByteWrapper {
     }
 }
 
-
- 
 // 15. SHORT WRAPPER
 // Question:
 // Convert a short primitive into a Short object.
- 
 
 class Q15_ShortWrapper {
     public static void main(String[] args) {
@@ -348,12 +302,9 @@ class Q15_ShortWrapper {
     }
 }
 
-
- 
 // 16. SUM OF TWO INTEGER WRAPPERS
 // Question:
 // Add two Integer objects.
- 
 
 class Q16_AddWrappers {
     public static void main(String[] args) {
@@ -367,12 +318,9 @@ class Q16_AddWrappers {
     }
 }
 
-
- 
 // 17. ALL ARITHMETIC OPERATIONS
 // Question:
 // Perform arithmetic operations using wrapper objects.
- 
 
 class Q17_WrapperArithmetic {
     public static void main(String[] args) {
@@ -388,12 +336,9 @@ class Q17_WrapperArithmetic {
     }
 }
 
-
- 
 // 18. COMPARE TWO INTEGER OBJECTS USING equals()
 // Question:
 // Check whether two Integer objects contain the same value.
- 
 
 class Q18_IntegerEquals {
     public static void main(String[] args) {
@@ -408,12 +353,9 @@ class Q18_IntegerEquals {
     }
 }
 
-
- 
 // 19. COMPARE INTEGER OBJECTS USING ==
 // Question:
 // Demonstrate reference comparison between Integer objects.
- 
 
 class Q19_IntegerReferenceComparison {
     public static void main(String[] args) {
@@ -428,12 +370,9 @@ class Q19_IntegerReferenceComparison {
     }
 }
 
-
- 
 // 20. INTEGER CACHE DEMONSTRATION
 // Question:
 // Demonstrate the Integer caching behavior.
- 
 
 class Q20_IntegerCache {
     public static void main(String[] args) {
@@ -452,12 +391,9 @@ class Q20_IntegerCache {
     }
 }
 
-
- 
 // 21. STRING TO INTEGER WITH EXCEPTION HANDLING
 // Question:
 // Convert a String to int and safely handle invalid input.
- 
 
 class Q21_ParseException {
     public static void main(String[] args) {
@@ -477,12 +413,9 @@ class Q21_ParseException {
     }
 }
 
-
- 
 // 22. CHECK EVEN/ODD USING INTEGER
 // Question:
 // Determine whether an Integer is even or odd.
- 
 
 class Q22_EvenOdd {
     public static void main(String[] args) {
@@ -496,12 +429,9 @@ class Q22_EvenOdd {
     }
 }
 
-
- 
 // 23. FIND MAXIMUM OF TWO INTEGER OBJECTS
 // Question:
 // Find the larger value using Integer objects.
- 
 
 class Q23_MaxInteger {
     public static void main(String[] args) {
@@ -516,12 +446,9 @@ class Q23_MaxInteger {
     }
 }
 
-
- 
 // 24. FIND MINIMUM USING Integer.min()
 // Question:
 // Find the smaller of two integers using wrapper methods.
- 
 
 class Q24_MinInteger {
     public static void main(String[] args) {
@@ -535,12 +462,9 @@ class Q24_MinInteger {
     }
 }
 
-
- 
 // 25. FIND MAXIMUM USING Integer.max()
 // Question:
 // Find the larger of two integers.
- 
 
 class Q25_MaxMethod {
     public static void main(String[] args) {
@@ -554,12 +478,9 @@ class Q25_MaxMethod {
     }
 }
 
-
- 
 // 26. CHECK PRIME USING INTEGER
 // Question:
 // Check whether an Integer is prime.
- 
 
 class Q26_Prime {
     public static void main(String[] args) {
@@ -589,12 +510,9 @@ class Q26_Prime {
     }
 }
 
-
- 
 // 27. REVERSE AN INTEGER
 // Question:
 // Reverse the digits of an Integer.
- 
 
 class Q27_ReverseInteger {
     public static void main(String[] args) {
@@ -617,12 +535,9 @@ class Q27_ReverseInteger {
     }
 }
 
-
- 
 // 28. PALINDROME INTEGER
 // Question:
 // Check whether an Integer is a palindrome.
- 
 
 class Q28_PalindromeInteger {
     public static void main(String[] args) {
@@ -648,12 +563,9 @@ class Q28_PalindromeInteger {
     }
 }
 
-
- 
 // 29. SUM OF DIGITS
 // Question:
 // Find the sum of digits of an Integer.
- 
 
 class Q29_SumDigits {
     public static void main(String[] args) {
@@ -673,12 +585,9 @@ class Q29_SumDigits {
     }
 }
 
-
- 
 // 30. COUNT DIGITS
 // Question:
 // Count the number of digits in an Integer.
- 
 
 class Q30_CountDigits {
     public static void main(String[] args) {
@@ -697,13 +606,10 @@ class Q30_CountDigits {
     }
 }
 
-
- 
 // 31. CHARACTER METHODS
 // Question:
 // Check whether a Character is uppercase, lowercase,
 // digit or whitespace.
- 
 
 class Q31_CharacterMethods {
     public static void main(String[] args) {
@@ -711,29 +617,22 @@ class Q31_CharacterMethods {
         Character ch = 'A';
 
         System.out.println(
-            Character.isUpperCase(ch)
-        );
+                Character.isUpperCase(ch));
 
         System.out.println(
-            Character.isLowerCase(ch)
-        );
+                Character.isLowerCase(ch));
 
         System.out.println(
-            Character.isDigit(ch)
-        );
+                Character.isDigit(ch));
 
         System.out.println(
-            Character.isWhitespace(ch)
-        );
+                Character.isWhitespace(ch));
     }
 }
 
-
- 
 // 32. TOGGLE CHARACTER CASE
 // Question:
 // Convert an uppercase Character to lowercase and vice versa.
- 
 
 class Q32_ToggleCharacter {
     public static void main(String[] args) {
@@ -753,12 +652,9 @@ class Q32_ToggleCharacter {
     }
 }
 
-
- 
 // 33. BOOLEAN PARSING
 // Question:
 // Convert a String into a Boolean value.
- 
 
 class Q33_BooleanParsing {
     public static void main(String[] args) {
@@ -771,12 +667,9 @@ class Q33_BooleanParsing {
     }
 }
 
-
- 
 // 34. DOUBLE PARSING
 // Question:
 // Convert a String into a primitive double.
- 
 
 class Q34_DoubleParsing {
     public static void main(String[] args) {
@@ -789,17 +682,14 @@ class Q34_DoubleParsing {
     }
 }
 
-
- 
 // 35. INTEGER ARRAY USING WRAPPER CLASS
 // Question:
 // Create an Integer array and calculate its sum.
- 
 
 class Q35_IntegerArray {
     public static void main(String[] args) {
 
-        Integer[] arr = {10, 20, 30, 40, 50};
+        Integer[] arr = { 10, 20, 30, 40, 50 };
 
         int sum = 0;
 
@@ -812,17 +702,14 @@ class Q35_IntegerArray {
     }
 }
 
-
- 
 // 36. FIND MAXIMUM IN Integer ARRAY
 // Question:
 // Find the maximum value in an Integer array.
- 
 
 class Q36_MaxIntegerArray {
     public static void main(String[] args) {
 
-        Integer[] arr = {10, 50, 20, 90, 30};
+        Integer[] arr = { 10, 50, 20, 90, 30 };
 
         Integer max = arr[0];
 
@@ -836,33 +723,26 @@ class Q36_MaxIntegerArray {
     }
 }
 
-
- 
 // 37. SORT Integer ARRAY
 // Question:
 // Sort an Integer array using Arrays.sort().
- 
 
 class Q37_SortIntegerArray {
     public static void main(String[] args) {
 
-        Integer[] arr = {50, 10, 40, 20, 30};
+        Integer[] arr = { 50, 10, 40, 20, 30 };
 
         Arrays.sort(arr);
 
         System.out.println(
-            Arrays.toString(arr)
-        );
+                Arrays.toString(arr));
     }
 }
 
-
- 
 // 38. ARRAYLIST WITH WRAPPER CLASS
 // Question:
 // Store primitive-like integer values in an ArrayList
 // using autoboxing.
- 
 
 class Q38_ArrayListAutoboxing {
     public static void main(String[] args) {
@@ -884,20 +764,16 @@ class Q38_ArrayListAutoboxing {
     }
 }
 
-
- 
 // 39. REMOVE AN ELEMENT FROM ArrayList
 // Question:
 // Remove an element from an ArrayList<Integer>.
 // Demonstrate the difference between remove(int)
 // and remove(Integer).
- 
 
 class Q39_ArrayListRemove {
     public static void main(String[] args) {
 
-        ArrayList<Integer> list =
-            new ArrayList<>(Arrays.asList(10, 20, 30, 40));
+        ArrayList<Integer> list = new ArrayList<>(Arrays.asList(10, 20, 30, 40));
 
         // Removes element at index 1
         list.remove(1);
@@ -909,12 +785,9 @@ class Q39_ArrayListRemove {
     }
 }
 
-
- 
 // 40. HANDLE NULL WRAPPER
 // Question:
 // Safely check an Integer for null before unboxing.
- 
 
 class Q40_NullWrapper {
     public static void main(String[] args) {
@@ -934,18 +807,14 @@ class Q40_NullWrapper {
     }
 }
 
-
- 
 // 41. SUM OF Integer VALUES FROM ARRAYLIST
 // Question:
 // Calculate the sum of Integer objects using unboxing.
- 
 
 class Q41_ArrayListSum {
     public static void main(String[] args) {
 
-        ArrayList<Integer> list =
-            new ArrayList<>(Arrays.asList(10, 20, 30));
+        ArrayList<Integer> list = new ArrayList<>(Arrays.asList(10, 20, 30));
 
         int sum = 0;
 
@@ -958,12 +827,9 @@ class Q41_ArrayListSum {
     }
 }
 
-
- 
 // 42. COMPARE INTEGER VALUES SAFELY
 // Question:
 // Compare two Integer objects based on their values.
- 
 
 class Q42_CompareIntegers {
     public static void main(String[] args) {
@@ -978,12 +844,9 @@ class Q42_CompareIntegers {
     }
 }
 
-
- 
 // 43. compareTo()
 // Question:
 // Compare two Integer objects using compareTo().
- 
 
 class Q43_IntegerCompareTo {
     public static void main(String[] args) {
@@ -1004,12 +867,9 @@ class Q43_IntegerCompareTo {
     }
 }
 
-
- 
 // 44. CONVERT INTEGER TO BINARY
 // Question:
 // Convert an Integer into its binary String representation.
- 
 
 class Q44_IntegerBinary {
     public static void main(String[] args) {
@@ -1022,12 +882,9 @@ class Q44_IntegerBinary {
     }
 }
 
-
- 
 // 45. CONVERT INTEGER TO HEXADECIMAL
 // Question:
 // Convert an Integer into hexadecimal representation.
- 
 
 class Q45_IntegerHex {
     public static void main(String[] args) {
@@ -1040,12 +897,9 @@ class Q45_IntegerHex {
     }
 }
 
-
- 
 // 46. CHECK INTEGER SIGN
 // Question:
 // Determine whether an Integer is positive, negative or zero.
- 
 
 class Q46_IntegerSign {
     public static void main(String[] args) {
@@ -1063,37 +917,31 @@ class Q46_IntegerSign {
     }
 }
 
-
- 
 // 47. SUM OF INTEGER ARRAY USING STREAMS
 // Question:
 // Find the sum of an Integer array using streams.
- 
 
 class Q47_IntegerStream {
     public static void main(String[] args) {
 
-        Integer[] arr = {10, 20, 30, 40};
+        Integer[] arr = { 10, 20, 30, 40 };
 
         int sum = Arrays.stream(arr)
-                        .mapToInt(Integer::intValue)
-                        .sum();
+                .mapToInt(Integer::intValue)
+                .sum();
 
         System.out.println(sum);
     }
 }
 
-
- 
 // 48. FIND AVERAGE OF Integer ARRAY
 // Question:
 // Find the average of values stored in Integer[].
- 
 
 class Q48_IntegerAverage {
     public static void main(String[] args) {
 
-        Integer[] arr = {10, 20, 30, 40, 50};
+        Integer[] arr = { 10, 20, 30, 40, 50 };
 
         int sum = 0;
 
@@ -1102,51 +950,42 @@ class Q48_IntegerAverage {
             sum += value;
         }
 
-        double average =
-            (double) sum / arr.length;
+        double average = (double) sum / arr.length;
 
         System.out.println(average);
     }
 }
 
-
- 
 // 49. CONVERT String ARRAY TO Integer ARRAY
 // Question:
 // Convert an array of numeric Strings into Integer objects.
- 
 
 class Q49_StringToIntegerArray {
     public static void main(String[] args) {
 
-        String[] values = {"10", "20", "30", "40"};
+        String[] values = { "10", "20", "30", "40" };
 
         Integer[] numbers = new Integer[values.length];
 
         for (int i = 0; i < values.length; i++) {
 
-            numbers[i] =
-                Integer.valueOf(values[i]);
+            numbers[i] = Integer.valueOf(values[i]);
         }
 
         System.out.println(
-            Arrays.toString(numbers)
-        );
+                Arrays.toString(numbers));
     }
 }
 
-
- 
 // 50. FIND SECOND LARGEST INTEGER
 // Question:
 // Find the second largest distinct value in an Integer array.
- 
 
 class Q50_SecondLargest {
     public static void main(String[] args) {
 
         Integer[] arr = {
-            10, 50, 20, 50, 30, 40
+                10, 50, 20, 50, 30, 40
         };
 
         Integer largest = null;
@@ -1157,7 +996,7 @@ class Q50_SecondLargest {
             if (largest == null || value > largest) {
 
                 if (largest != null &&
-                    !value.equals(largest)) {
+                        !value.equals(largest)) {
 
                     second = largest;
                 }
@@ -1165,7 +1004,7 @@ class Q50_SecondLargest {
                 largest = value;
 
             } else if (!value.equals(largest) &&
-                       (second == null || value > second)) {
+                    (second == null || value > second)) {
 
                 second = value;
             }
@@ -1173,11 +1012,9 @@ class Q50_SecondLargest {
 
         if (second != null)
             System.out.println(
-                "Second largest = " + second
-            );
+                    "Second largest = " + second);
         else
             System.out.println(
-                "No second largest distinct value"
-            );
+                    "No second largest distinct value");
     }
 }

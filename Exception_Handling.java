@@ -66,7 +66,6 @@ class Main {
     }
 }
 
-
 // Q1. Handle ArithmeticException using try-catch.
 class ExceptionQuestions {
 
@@ -81,15 +80,13 @@ class ExceptionQuestions {
             System.out.println("Cannot divide by zero");
         }
 
-
         // Q2. Handle ArrayIndexOutOfBoundsException.
         try {
-            int[] arr = {10, 20, 30};
+            int[] arr = { 10, 20, 30 };
             System.out.println(arr[5]);
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("Invalid array index");
         }
-
 
         // Q3. Handle NullPointerException.
         try {
@@ -98,7 +95,6 @@ class ExceptionQuestions {
         } catch (NullPointerException e) {
             System.out.println("String is null");
         }
-
 
         // Q4. Handle NumberFormatException.
         try {
@@ -109,10 +105,9 @@ class ExceptionQuestions {
             System.out.println("Invalid number");
         }
 
-
         // Q5. Use multiple catch blocks.
         try {
-            int[] arr = {10, 20, 30};
+            int[] arr = { 10, 20, 30 };
             System.out.println(arr[5]);
         } catch (ArithmeticException e) {
             System.out.println("Arithmetic error");
@@ -121,7 +116,6 @@ class ExceptionQuestions {
         } catch (Exception e) {
             System.out.println("Some other exception");
         }
-
 
         // Q6. Demonstrate finally.
         try {
@@ -132,7 +126,6 @@ class ExceptionQuestions {
             System.out.println("Finally always executes");
         }
 
-
         // Q7. finally executes even when exception occurs.
         try {
             int result = 10 / 0;
@@ -142,7 +135,6 @@ class ExceptionQuestions {
         } finally {
             System.out.println("Finally executed");
         }
-
 
         // Q8. Use throw to explicitly throw an exception.
         int age = 15;
@@ -158,14 +150,12 @@ class ExceptionQuestions {
             System.out.println(e.getMessage());
         }
 
-
         // Q9. Create a method using throw to validate age.
         try {
             checkAge(16);
         } catch (IllegalArgumentException e) {
             System.out.println(e.getMessage());
         }
-
 
         // Q10. Use throws to declare an exception.
         try {
@@ -174,14 +164,12 @@ class ExceptionQuestions {
             System.out.println("Exception handled in main");
         }
 
-
         // Q11. Use throws with IOException.
         try {
             readData();
         } catch (IOException e) {
             System.out.println("IOException handled");
         }
-
 
         // Q12. Use getMessage(), getClass() and printStackTrace().
         try {
@@ -193,14 +181,12 @@ class ExceptionQuestions {
             // e.printStackTrace();
         }
 
-
         // Q13. Demonstrate exception propagation.
         try {
             method1();
         } catch (ArithmeticException e) {
             System.out.println("Exception handled in main");
         }
-
 
         // Q14. Nested try-catch.
         try {
@@ -217,10 +203,8 @@ class ExceptionQuestions {
             System.out.println("Outer catch");
         }
 
-
         // Q15. Demonstrate return with finally.
         System.out.println(returnExample());
-
 
         // Q16. Validate positive number using throw.
         try {
@@ -228,7 +212,6 @@ class ExceptionQuestions {
         } catch (IllegalArgumentException e) {
             System.out.println(e.getMessage());
         }
-
 
         // Q17. Check whether a number is valid for division.
         try {
@@ -238,15 +221,13 @@ class ExceptionQuestions {
             System.out.println(e.getMessage());
         }
 
-
         // Q18. Handle multiple exceptions using multi-catch.
         try {
-            int[] arr = {1, 2, 3};
+            int[] arr = { 1, 2, 3 };
             System.out.println(arr[5]);
         } catch (ArithmeticException | ArrayIndexOutOfBoundsException e) {
             System.out.println("Exception: " + e.getClass().getSimpleName());
         }
-
 
         // Q19. Handle user input exception.
         Scanner sc = new Scanner(System.in);
@@ -261,14 +242,12 @@ class ExceptionQuestions {
             System.out.println("Please enter a valid integer");
         }
 
-
         // Q20. Demonstrate checked exception using throws.
         try {
             checkedExceptionMethod();
         } catch (Exception e) {
             System.out.println("Checked exception handled");
         }
-
 
         // Q21. Demonstrate exception rethrowing.
         try {
@@ -277,14 +256,12 @@ class ExceptionQuestions {
             System.out.println("Rethrown exception handled");
         }
 
-
         // Q22. Demonstrate custom exception.
         try {
             checkMarks(105);
         } catch (InvalidMarksException e) {
             System.out.println(e.getMessage());
         }
-
 
         // Q23. Demonstrate exception hierarchy.
         try {
@@ -298,10 +275,8 @@ class ExceptionQuestions {
             System.out.println("Exception caught");
         }
 
-
         // Q24. finally with return.
         System.out.println(finallyReturn());
-
 
         // Q25. Demonstrate that finally executes before exception propagation.
         try {
@@ -310,7 +285,6 @@ class ExceptionQuestions {
             System.out.println("Cleanup completed");
         }
     }
-
 
     // Q9 Solution
     static void checkAge(int age) {
@@ -322,18 +296,15 @@ class ExceptionQuestions {
         System.out.println("Eligible");
     }
 
-
     // Q10 Solution
     static void testThrows() throws Exception {
         throw new Exception("Something went wrong");
     }
 
-
     // Q11 Solution
     static void readData() throws IOException {
         throw new IOException("Unable to read data");
     }
-
 
     // Q13 Solution
     static void method1() {
@@ -348,7 +319,6 @@ class ExceptionQuestions {
         throw new ArithmeticException("Error propagated");
     }
 
-
     // Q15 Solution
     static int returnExample() {
 
@@ -359,39 +329,33 @@ class ExceptionQuestions {
         }
     }
 
-
     // Q16 Solution
     static void validateNumber(int number) {
 
         if (number <= 0) {
             throw new IllegalArgumentException(
-                "Number must be positive"
-            );
+                    "Number must be positive");
         }
 
         System.out.println("Valid number");
     }
-
 
     // Q17 Solution
     static int divide(int a, int b) {
 
         if (b == 0) {
             throw new ArithmeticException(
-                "Cannot divide by zero"
-            );
+                    "Cannot divide by zero");
         }
 
         return a / b;
     }
-
 
     // Q20 Solution
     static void checkedExceptionMethod() throws Exception {
 
         throw new Exception("Checked exception");
     }
-
 
     // Q21 Solution
     static void rethrowExample() throws Exception {
@@ -404,20 +368,17 @@ class ExceptionQuestions {
         }
     }
 
-
     // Q22 Solution
     static void checkMarks(int marks)
             throws InvalidMarksException {
 
         if (marks < 0 || marks > 100) {
             throw new InvalidMarksException(
-                "Marks must be between 0 and 100"
-            );
+                    "Marks must be between 0 and 100");
         }
 
         System.out.println("Valid marks");
     }
-
 
     // Q24 Solution
     static int finallyReturn() {
@@ -429,7 +390,6 @@ class ExceptionQuestions {
         }
     }
 }
-
 
 // Q22. Custom checked exception.
 class InvalidMarksException extends Exception {

@@ -41,11 +41,9 @@ class Main {
             writer.close();
 
             System.out.println("File written successfully.");
-        }
-        catch (IOException e) {
+        } catch (IOException e) {
             System.out.println("Writing error: " + e.getMessage());
         }
-
 
         // ==========================================
         // 2. FILE READING - FileReader
@@ -62,19 +60,16 @@ class Main {
 
             reader.close();
 
-        }
-        catch (IOException e) {
+        } catch (IOException e) {
             System.out.println("Reading error: " + e.getMessage());
         }
-
 
         // ==========================================
         // 3. BUFFERED READING - BufferedReader
         // ==========================================
 
         try {
-            BufferedReader br =
-                new BufferedReader(new FileReader("data.txt"));
+            BufferedReader br = new BufferedReader(new FileReader("data.txt"));
 
             String line;
 
@@ -86,19 +81,16 @@ class Main {
 
             br.close();
 
-        }
-        catch (IOException e) {
+        } catch (IOException e) {
             System.out.println("Error: " + e.getMessage());
         }
-
 
         // ==========================================
         // 4. BUFFERED WRITING - BufferedWriter
         // ==========================================
 
         try {
-            BufferedWriter bw =
-                new BufferedWriter(new FileWriter("data2.txt"));
+            BufferedWriter bw = new BufferedWriter(new FileWriter("data2.txt"));
 
             bw.write("First Line");
             bw.newLine();
@@ -107,40 +99,34 @@ class Main {
             bw.close();
 
             System.out.println("\nData written using BufferedWriter.");
-        }
-        catch (IOException e) {
+        } catch (IOException e) {
             System.out.println("Error: " + e.getMessage());
         }
-
 
         // ==========================================
         // 5. BYTE STREAM - FileOutputStream
         // ==========================================
 
         try {
-            FileOutputStream out =
-                new FileOutputStream("bytes.txt");
+            FileOutputStream out = new FileOutputStream("bytes.txt");
 
-            out.write(65);  // ASCII value of A
-            out.write(66);  // ASCII value of B
-            out.write(67);  // ASCII value of C
+            out.write(65); // ASCII value of A
+            out.write(66); // ASCII value of B
+            out.write(67); // ASCII value of C
 
             out.close();
 
             System.out.println("Bytes written successfully.");
-        }
-        catch (IOException e) {
+        } catch (IOException e) {
             System.out.println("Output error: " + e.getMessage());
         }
-
 
         // ==========================================
         // 6. BYTE STREAM - FileInputStream
         // ==========================================
 
         try {
-            FileInputStream in =
-                new FileInputStream("bytes.txt");
+            FileInputStream in = new FileInputStream("bytes.txt");
 
             int data;
 
@@ -152,11 +138,9 @@ class Main {
 
             in.close();
 
-        }
-        catch (IOException e) {
+        } catch (IOException e) {
             System.out.println("\nInput error: " + e.getMessage());
         }
-
 
         // ==========================================
         // 7. SERIALIZATION
@@ -164,13 +148,10 @@ class Main {
 
         try {
 
-            Student s =
-                new Student(101, "Rahul", "abc123");
+            Student s = new Student(101, "Rahul", "abc123");
 
-            ObjectOutputStream out =
-                new ObjectOutputStream(
-                    new FileOutputStream("student.dat")
-                );
+            ObjectOutputStream out = new ObjectOutputStream(
+                    new FileOutputStream("student.dat"));
 
             out.writeObject(s);
 
@@ -178,12 +159,10 @@ class Main {
 
             System.out.println("\n\nObject serialized successfully.");
 
-        }
-        catch (IOException e) {
+        } catch (IOException e) {
             System.out.println("Serialization error: "
-                               + e.getMessage());
+                    + e.getMessage());
         }
-
 
         // ==========================================
         // 8. DESERIALIZATION
@@ -191,10 +170,8 @@ class Main {
 
         try {
 
-            ObjectInputStream in =
-                new ObjectInputStream(
-                    new FileInputStream("student.dat")
-                );
+            ObjectInputStream in = new ObjectInputStream(
+                    new FileInputStream("student.dat"));
 
             Student s = (Student) in.readObject();
 
@@ -204,17 +181,14 @@ class Main {
 
             s.display();
 
-        }
-        catch (IOException | ClassNotFoundException e) {
+        } catch (IOException | ClassNotFoundException e) {
             System.out.println("Deserialization error: "
-                               + e.getMessage());
+                    + e.getMessage());
         }
     }
 }
 
- 
 // Q1. Create a custom checked exception for invalid age.
- 
 
 class InvalidAgeException extends Exception {
 
@@ -223,10 +197,7 @@ class InvalidAgeException extends Exception {
     }
 }
 
-
- 
 // Q2. Create a custom unchecked exception.
- 
 
 class InvalidAmountException extends RuntimeException {
 
@@ -235,10 +206,7 @@ class InvalidAmountException extends RuntimeException {
     }
 }
 
-
- 
 // Q3. Create a custom exception and throw it when age < 18.
- 
 
 class CustomExceptionDemo {
 
@@ -246,18 +214,14 @@ class CustomExceptionDemo {
 
         if (age < 18) {
             throw new InvalidAgeException(
-                "Age must be 18 or above"
-            );
+                    "Age must be 18 or above");
         }
 
         System.out.println("Eligible");
     }
 }
 
-
- 
 // Q4. Write data into a text file using FileWriter.
- 
 
 class WriteFileDemo {
 
@@ -279,10 +243,7 @@ class WriteFileDemo {
     }
 }
 
-
- 
 // Q5. Read a file character-by-character using FileReader.
- 
 
 class ReadFileDemo {
 
@@ -305,20 +266,15 @@ class ReadFileDemo {
     }
 }
 
-
- 
 // Q6. Read a file using BufferedReader.
- 
 
 class BufferedReadDemo {
 
     public static void main(String[] args) {
 
         try {
-            BufferedReader br =
-                new BufferedReader(
-                    new FileReader("data.txt")
-                );
+            BufferedReader br = new BufferedReader(
+                    new FileReader("data.txt"));
 
             String line;
 
@@ -334,18 +290,14 @@ class BufferedReadDemo {
     }
 }
 
-
- 
 // Q7. Append data to an existing file.
- 
 
 class AppendFileDemo {
 
     public static void main(String[] args) {
 
         try {
-            FileWriter writer =
-                new FileWriter("data.txt", true);
+            FileWriter writer = new FileWriter("data.txt", true);
 
             writer.write("\nNew line added");
 
@@ -359,21 +311,16 @@ class AppendFileDemo {
     }
 }
 
-
- 
 // Q8. Copy a file using byte streams.
- 
 
 class CopyFileDemo {
 
     public static void main(String[] args) {
 
         try {
-            FileInputStream input =
-                new FileInputStream("source.txt");
+            FileInputStream input = new FileInputStream("source.txt");
 
-            FileOutputStream output =
-                new FileOutputStream("copy.txt");
+            FileOutputStream output = new FileOutputStream("copy.txt");
 
             int data;
 
@@ -392,18 +339,14 @@ class CopyFileDemo {
     }
 }
 
-
- 
 // Q9. Write bytes to a file using FileOutputStream.
- 
 
 class ByteWriteDemo {
 
     public static void main(String[] args) {
 
         try {
-            FileOutputStream out =
-                new FileOutputStream("numbers.dat");
+            FileOutputStream out = new FileOutputStream("numbers.dat");
 
             out.write(65);
             out.write(66);
@@ -417,18 +360,14 @@ class ByteWriteDemo {
     }
 }
 
-
- 
 // Q10. Read bytes from a file using FileInputStream.
- 
 
 class ByteReadDemo {
 
     public static void main(String[] args) {
 
         try {
-            FileInputStream input =
-                new FileInputStream("numbers.dat");
+            FileInputStream input = new FileInputStream("numbers.dat");
 
             int data;
 
@@ -444,10 +383,7 @@ class ByteReadDemo {
     }
 }
 
-
- 
 // Q11. Serialize a Student object.
- 
 
 class Student implements Serializable {
 
@@ -462,19 +398,15 @@ class Student implements Serializable {
     }
 }
 
-
 class SerializationDemo {
 
     public static void main(String[] args) {
 
-        Student s =
-            new Student("Shubhangi", 95);
+        Student s = new Student("Shubhangi", 95);
 
         try {
-            ObjectOutputStream out =
-                new ObjectOutputStream(
-                    new FileOutputStream("student.dat")
-                );
+            ObjectOutputStream out = new ObjectOutputStream(
+                    new FileOutputStream("student.dat"));
 
             out.writeObject(s);
 
@@ -488,23 +420,17 @@ class SerializationDemo {
     }
 }
 
-
- 
 // Q12. Deserialize a Student object.
- 
 
 class DeserializationDemo {
 
     public static void main(String[] args) {
 
         try {
-            ObjectInputStream in =
-                new ObjectInputStream(
-                    new FileInputStream("student.dat")
-                );
+            ObjectInputStream in = new ObjectInputStream(
+                    new FileInputStream("student.dat"));
 
-            Student s =
-                (Student) in.readObject();
+            Student s = (Student) in.readObject();
 
             in.close();
 
@@ -520,10 +446,7 @@ class DeserializationDemo {
     }
 }
 
-
- 
 // Q13. Demonstrate transient fields during serialization.
- 
 
 class Employee implements Serializable {
 
@@ -539,36 +462,27 @@ class Employee implements Serializable {
     }
 }
 
-
 class TransientDemo {
 
     public static void main(String[] args) {
 
-        Employee e =
-            new Employee(
+        Employee e = new Employee(
                 "John",
                 50000,
-                "abc123"
-            );
+                "abc123");
 
         try {
 
-            ObjectOutputStream out =
-                new ObjectOutputStream(
-                    new FileOutputStream("employee.dat")
-                );
+            ObjectOutputStream out = new ObjectOutputStream(
+                    new FileOutputStream("employee.dat"));
 
             out.writeObject(e);
             out.close();
 
+            ObjectInputStream in = new ObjectInputStream(
+                    new FileInputStream("employee.dat"));
 
-            ObjectInputStream in =
-                new ObjectInputStream(
-                    new FileInputStream("employee.dat")
-                );
-
-            Employee result =
-                (Employee) in.readObject();
+            Employee result = (Employee) in.readObject();
 
             in.close();
 
@@ -584,10 +498,7 @@ class TransientDemo {
     }
 }
 
-
- 
 // Q14. Serialize multiple objects.
- 
 
 class MultipleObjectsDemo {
 
@@ -595,16 +506,12 @@ class MultipleObjectsDemo {
 
         try {
 
-            ObjectOutputStream out =
-                new ObjectOutputStream(
-                    new FileOutputStream("objects.dat")
-                );
+            ObjectOutputStream out = new ObjectOutputStream(
+                    new FileOutputStream("objects.dat"));
 
-            Student s1 =
-                new Student("A", 90);
+            Student s1 = new Student("A", 90);
 
-            Student s2 =
-                new Student("B", 85);
+            Student s2 = new Student("B", 85);
 
             out.writeObject(s1);
             out.writeObject(s2);
@@ -619,10 +526,7 @@ class MultipleObjectsDemo {
     }
 }
 
-
- 
 // Q15. Deserialize multiple objects.
- 
 
 class ReadMultipleObjectsDemo {
 
@@ -630,26 +534,20 @@ class ReadMultipleObjectsDemo {
 
         try {
 
-            ObjectInputStream in =
-                new ObjectInputStream(
-                    new FileInputStream("objects.dat")
-                );
+            ObjectInputStream in = new ObjectInputStream(
+                    new FileInputStream("objects.dat"));
 
-            Student s1 =
-                (Student) in.readObject();
+            Student s1 = (Student) in.readObject();
 
-            Student s2 =
-                (Student) in.readObject();
+            Student s2 = (Student) in.readObject();
 
             in.close();
 
             System.out.println(
-                s1.name + " " + s1.marks
-            );
+                    s1.name + " " + s1.marks);
 
             System.out.println(
-                s2.name + " " + s2.marks
-            );
+                    s2.name + " " + s2.marks);
 
         } catch (Exception e) {
             System.out.println("Error");
@@ -657,17 +555,13 @@ class ReadMultipleObjectsDemo {
     }
 }
 
-
- 
 // Q16. Serialize an ArrayList.
- 
 
 class SerializeListDemo {
 
     public static void main(String[] args) {
 
-        ArrayList<String> names =
-            new ArrayList<>();
+        ArrayList<String> names = new ArrayList<>();
 
         names.add("A");
         names.add("B");
@@ -675,10 +569,8 @@ class SerializeListDemo {
 
         try {
 
-            ObjectOutputStream out =
-                new ObjectOutputStream(
-                    new FileOutputStream("names.dat")
-                );
+            ObjectOutputStream out = new ObjectOutputStream(
+                    new FileOutputStream("names.dat"));
 
             out.writeObject(names);
 
@@ -692,10 +584,7 @@ class SerializeListDemo {
     }
 }
 
-
- 
 // Q17. Deserialize an ArrayList.
- 
 
 class DeserializeListDemo {
 
@@ -703,13 +592,10 @@ class DeserializeListDemo {
 
         try {
 
-            ObjectInputStream in =
-                new ObjectInputStream(
-                    new FileInputStream("names.dat")
-                );
+            ObjectInputStream in = new ObjectInputStream(
+                    new FileInputStream("names.dat"));
 
-            ArrayList<String> names =
-                (ArrayList<String>) in.readObject();
+            ArrayList<String> names = (ArrayList<String>) in.readObject();
 
             in.close();
 
@@ -723,21 +609,15 @@ class DeserializeListDemo {
     }
 }
 
-
- 
 // Q18. Use try-with-resources for file handling.
- 
 
 class TryWithResourcesDemo {
 
     public static void main(String[] args) {
 
         try (
-            BufferedReader br =
-                new BufferedReader(
-                    new FileReader("data.txt")
-                )
-        ) {
+                BufferedReader br = new BufferedReader(
+                        new FileReader("data.txt"))) {
 
             String line;
 
@@ -751,10 +631,7 @@ class TryWithResourcesDemo {
     }
 }
 
-
- 
 // Q19. Count lines in a file.
- 
 
 class CountLinesDemo {
 
@@ -763,19 +640,15 @@ class CountLinesDemo {
         int count = 0;
 
         try (
-            BufferedReader br =
-                new BufferedReader(
-                    new FileReader("data.txt")
-                )
-        ) {
+                BufferedReader br = new BufferedReader(
+                        new FileReader("data.txt"))) {
 
             while (br.readLine() != null) {
                 count++;
             }
 
             System.out.println(
-                "Number of lines: " + count
-            );
+                    "Number of lines: " + count);
 
         } catch (IOException e) {
             System.out.println("Error");
@@ -783,10 +656,7 @@ class CountLinesDemo {
     }
 }
 
-
- 
 // Q20. Count characters in a file.
- 
 
 class CountCharactersDemo {
 
@@ -795,17 +665,14 @@ class CountCharactersDemo {
         int count = 0;
 
         try (
-            FileReader reader =
-                new FileReader("data.txt")
-        ) {
+                FileReader reader = new FileReader("data.txt")) {
 
             while (reader.read() != -1) {
                 count++;
             }
 
             System.out.println(
-                "Characters: " + count
-            );
+                    "Characters: " + count);
 
         } catch (IOException e) {
             System.out.println("Error");
@@ -813,10 +680,7 @@ class CountCharactersDemo {
     }
 }
 
-
- 
 // Q21. Custom exception for insufficient balance.
- 
 
 class InsufficientBalanceException extends Exception {
 
@@ -825,23 +689,19 @@ class InsufficientBalanceException extends Exception {
     }
 }
 
-
 class BankAccount {
 
     static void withdraw(
-        double balance,
-        double amount
-    ) throws InsufficientBalanceException {
+            double balance,
+            double amount) throws InsufficientBalanceException {
 
         if (amount > balance) {
             throw new InsufficientBalanceException(
-                "Insufficient balance"
-            );
+                    "Insufficient balance");
         }
 
         System.out.println(
-            "Withdrawal successful"
-        );
+                "Withdrawal successful");
     }
 
     public static void main(String[] args) {

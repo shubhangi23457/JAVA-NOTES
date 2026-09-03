@@ -21,7 +21,6 @@ public class Strings {
         System.out.println("s2: " + s2);
         System.out.println("s3: " + s3);
 
-
         // 2. STRING CONCATENATION
 
         String firstName = "Shubhangi";
@@ -32,10 +31,8 @@ public class Strings {
         System.out.println("\nFull Name: " + fullName);
 
         System.out.println(
-            "Using concat(): " +
-            firstName.concat(" ").concat(lastName)
-        );
-
+                "Using concat(): " +
+                        firstName.concat(" ").concat(lastName));
 
         // 3. LENGTH
 
@@ -43,27 +40,21 @@ public class Strings {
 
         System.out.println("\nLength: " + text.length());
 
-
         // 4. charAt()
 
         System.out.println(
-            "Character at index 0: " + text.charAt(0)
-        );
+                "Character at index 0: " + text.charAt(0));
 
         System.out.println(
-            "Character at index 5: " + text.charAt(5)
-        );
+                "Character at index 5: " + text.charAt(5));
 
         // 5. toUpperCase() and toLowerCase()
 
         System.out.println(
-            "\nUppercase: " + text.toUpperCase()
-        );
+                "\nUppercase: " + text.toUpperCase());
 
         System.out.println(
-            "Lowercase: " + text.toLowerCase()
-        );
-
+                "Lowercase: " + text.toLowerCase());
 
         // 6. equals() AND equalsIgnoreCase()
 
@@ -72,18 +63,14 @@ public class Strings {
         String c = "java";
 
         System.out.println(
-            "\na.equals(b): " + a.equals(b)
-        );
+                "\na.equals(b): " + a.equals(b));
 
         System.out.println(
-            "a.equals(c): " + a.equals(c)
-        );
+                "a.equals(c): " + a.equals(c));
 
         System.out.println(
-            "a.equalsIgnoreCase(c): "
-            + a.equalsIgnoreCase(c)
-        );
-
+                "a.equalsIgnoreCase(c): "
+                        + a.equalsIgnoreCase(c));
 
         // 7. == VS equals()
 
@@ -100,115 +87,91 @@ public class Strings {
 
         System.out.println("x.equals(z): " + x.equals(z));
 
-
         // 8. compareTo()
 
         String p = "Apple";
         String q = "Banana";
 
         System.out.println(
-            "\np.compareTo(q): " + p.compareTo(q)
-        );
+                "\np.compareTo(q): " + p.compareTo(q));
 
         System.out.println(
-            "q.compareTo(p): " + q.compareTo(p)
-        );
+                "q.compareTo(p): " + q.compareTo(p));
 
         System.out.println(
-            "p.compareTo(\"Apple\"): "
-            + p.compareTo("Apple")
-        );
+                "p.compareTo(\"Apple\"): "
+                        + p.compareTo("Apple"));
 
         // 9. contains()
 
-        String sentence =
-            "Java is a powerful programming language";
+        String sentence = "Java is a powerful programming language";
 
         System.out.println(
-            "\nContains Java: "
-            + sentence.contains("Java")
-        );
+                "\nContains Java: "
+                        + sentence.contains("Java"));
 
         System.out.println(
-            "Contains Python: "
-            + sentence.contains("Python")
-        );
-
+                "Contains Python: "
+                        + sentence.contains("Python"));
 
         // 10. startsWith() AND endsWith()
 
         System.out.println(
-            "\nStarts with Java: "
-            + sentence.startsWith("Java")
-        );
+                "\nStarts with Java: "
+                        + sentence.startsWith("Java"));
 
         System.out.println(
-            "Ends with language: "
-            + sentence.endsWith("language")
-        );
-
+                "Ends with language: "
+                        + sentence.endsWith("language"));
 
         // 11. indexOf() AND lastIndexOf()
 
         String word = "programming";
 
         System.out.println(
-            "\nIndex of 'g': " + word.indexOf('g')
-        );
+                "\nIndex of 'g': " + word.indexOf('g'));
 
         System.out.println(
-            "Last index of 'g': "
-            + word.lastIndexOf('g')
-        );
+                "Last index of 'g': "
+                        + word.lastIndexOf('g'));
 
         System.out.println(
-            "Index of \"gram\": "
-            + word.indexOf("gram")
-        );
-
+                "Index of \"gram\": "
+                        + word.indexOf("gram"));
 
         // 12. substring()
 
         String language = "JavaProgramming";
 
         System.out.println(
-            "\nsubstring(4): "
-            + language.substring(4)
-        );
+                "\nsubstring(4): "
+                        + language.substring(4));
 
         System.out.println(
-            "substring(0, 4): "
-            + language.substring(0, 4)
-        );
-
+                "substring(0, 4): "
+                        + language.substring(0, 4));
 
         // 13. replace()
 
         String message = "I like Java";
 
         System.out.println(
-            "\nReplace Java with Python: "
-            + message.replace("Java", "Python")
-        );
+                "\nReplace Java with Python: "
+                        + message.replace("Java", "Python"));
 
         System.out.println(
-            "Replace a with @: "
-            + message.replace('a', '@')
-        );
-
+                "Replace a with @: "
+                        + message.replace('a', '@'));
 
         // 14. trim()
 
         String spaces = "   Hello Java   ";
 
         System.out.println(
-            "\nBefore trim: [" + spaces + "]"
-        );
+                "\nBefore trim: [" + spaces + "]");
 
         System.out.println(
-            "After trim: [" + spaces.trim() + "]"
-        );
-
+                "After trim: [" + spaces.trim() + "]");
 
         // 15. isEmpty() AND isBlank()
 
@@ -216,13 +179,10 @@ public class Strings {
         String blank = "   ";
 
         System.out.println(
-            "\nIs empty: " + empty.isEmpty()
-        );
+                "\nIs empty: " + empty.isEmpty());
 
         System.out.println(
-            "Is blank: " + blank.isBlank()
-        );
-
+                "Is blank: " + blank.isBlank());
 
         // 16. split()
 
@@ -236,7 +196,6 @@ public class Strings {
             System.out.println(lang);
         }
 
-
         // 17. STRINGBUILDER
         // String Builder has a capacity of 16 characters
 
@@ -247,103 +206,81 @@ public class Strings {
         sb.append("Java");
 
         System.out.println(
-            "\nStringBuilder: " + sb
-        );
-
+                "\nStringBuilder: " + sb);
 
         // 18. insert()
 
         sb.insert(6, "Advanced ");
 
         System.out.println(
-            "After insert(): " + sb
-        );
-
+                "After insert(): " + sb);
 
         // 19. delete()
 
         sb.delete(6, 15);
 
         System.out.println(
-            "After delete(): " + sb
-        );
-
+                "After delete(): " + sb);
 
         // 20. replace() IN STRINGBUILDER
 
         sb.replace(6, 10, "World");
 
         System.out.println(
-            "After replace(): " + sb
-        );
+                "After replace(): " + sb);
 
         // 21. reverse()
 
         sb.reverse();
 
         System.out.println(
-            "After reverse(): " + sb
-        );
+                "After reverse(): " + sb);
 
         // Reverse again to restore
         sb.reverse();
-
 
         // 22. setCharAt()
 
         sb.setCharAt(0, 'h');
 
         System.out.println(
-            "After setCharAt(): " + sb
-        );
-
+                "After setCharAt(): " + sb);
 
         // 23. StringBuilder length()
 
         System.out.println(
-            "StringBuilder length: " + sb.length()
-        );
-
+                "StringBuilder length: " + sb.length());
 
         // 24. StringBuilder capacity()
 
         System.out.println(
-            "StringBuilder capacity: "
-            + sb.capacity()
-        );
-
+                "StringBuilder capacity: "
+                        + sb.capacity());
 
         // 25. CONVERT STRINGBUILDER TO STRING
 
         String result = sb.toString();
 
         System.out.println(
-            "Converted String: " + result
-        );
-
+                "Converted String: " + result);
 
         // 26. PALINDROME USING STRINGBUILDER
 
         String original = "madam";
 
-        String reversed =
-            new StringBuilder(original)
+        String reversed = new StringBuilder(original)
                 .reverse()
                 .toString();
 
         System.out.println(
-            "\nOriginal: " + original
-        );
+                "\nOriginal: " + original);
 
         System.out.println(
-            "Reversed: " + reversed
-        );
+                "Reversed: " + reversed);
 
         System.out.println(
-            "Is Palindrome: "
-            + original.equals(reversed)
-        );
-
+                "Is Palindrome: "
+                        + original.equals(reversed));
 
         // 27. STRINGBUILDER EFFICIENT CONCATENATION
 
@@ -354,19 +291,16 @@ public class Strings {
         }
 
         System.out.println(
-            "\nNumbers: " + numbers
-        );
+                "\nNumbers: " + numbers);
     }
 }
 
-
 /*
-============================================================
-JAVA STRING, STRING METHODS & STRINGBUILDER
-IMPORTANT CODING QUESTIONS + SOLUTIONS
-============================================================
-*/
-
+ * ============================================================
+ * JAVA STRING, STRING METHODS & STRINGBUILDER
+ * IMPORTANT CODING QUESTIONS + SOLUTIONS
+ * ============================================================
+ */
 
 // 1. REVERSE A STRING
 // Question: Write a Java program to reverse a given String.
@@ -381,7 +315,6 @@ class Q1_ReverseString {
         System.out.println(sb.reverse());
     }
 }
-
 
 // 2. CHECK PALINDROME
 // Question: Check whether a given String is a palindrome.
@@ -400,11 +333,8 @@ class Q2_Palindrome {
     }
 }
 
-
-
 // 3. COUNT VOWELS AND CONSONANTS
 // Question: Count the number of vowels and consonants.
-
 
 class Q3_VowelsConsonants {
     public static void main(String[] args) {
@@ -432,11 +362,8 @@ class Q3_VowelsConsonants {
     }
 }
 
-
-
 // 4. COUNT FREQUENCY OF EVERY CHARACTER
 // Question: Count how many times each character occurs.
-
 
 class Q4_CharacterFrequency {
     public static void main(String[] args) {
@@ -464,11 +391,8 @@ class Q4_CharacterFrequency {
     }
 }
 
-
-
 // 5. FIRST NON-REPEATING CHARACTER
 // Question: Find the first character that occurs only once.
-
 
 class Q5_FirstNonRepeating {
     public static void main(String[] args) {
@@ -490,11 +414,8 @@ class Q5_FirstNonRepeating {
     }
 }
 
-
-
 // 6. REMOVE DUPLICATE CHARACTERS
 // Question: Remove duplicate characters while preserving order.
-
 
 class Q6_RemoveDuplicates {
     public static void main(String[] args) {
@@ -516,11 +437,8 @@ class Q6_RemoveDuplicates {
     }
 }
 
-
-
 // 7. COUNT WORDS
 // Question: Count the number of words in a sentence.
-
 
 class Q7_CountWords {
     public static void main(String[] args) {
@@ -540,15 +458,12 @@ class Q7_CountWords {
     }
 }
 
-
-
 // 8. REVERSE EVERY WORD
 // Question:
 // Reverse every word but keep the order of the words unchanged.
 //
 // Input : Java is powerful
 // Output: avaJ si lufrewop
-
 
 class Q8_ReverseEveryWord {
     public static void main(String[] args) {
@@ -562,8 +477,7 @@ class Q8_ReverseEveryWord {
         for (String word : words) {
 
             result.append(
-                new StringBuilder(word).reverse()
-            );
+                    new StringBuilder(word).reverse());
 
             result.append(" ");
         }
@@ -572,15 +486,12 @@ class Q8_ReverseEveryWord {
     }
 }
 
-
-
 // 9. REVERSE WORD ORDER
 // Question:
 // Reverse the order of words in a sentence.
 //
 // Input : Java is powerful
 // Output: powerful is Java
-
 
 class Q9_ReverseWordOrder {
     public static void main(String[] args) {
@@ -603,12 +514,9 @@ class Q9_ReverseWordOrder {
     }
 }
 
-
-
 // 10. CHECK ANAGRAM
 // Question: Check whether two Strings are anagrams.
 // Example: listen and silent
-
 
 class Q10_Anagram {
     public static void main(String[] args) {
@@ -632,11 +540,8 @@ class Q10_Anagram {
     }
 }
 
-
-
 // 11. REMOVE ALL SPACES
 // Question: Remove all spaces from a String.
-
 
 class Q11_RemoveSpaces {
     public static void main(String[] args) {
@@ -649,11 +554,8 @@ class Q11_RemoveSpaces {
     }
 }
 
-
-
 // 12. REPLACE A CHARACTER
 // Question: Replace every occurrence of 'a' with 'x'.
-
 
 class Q12_ReplaceCharacter {
     public static void main(String[] args) {
@@ -666,8 +568,6 @@ class Q12_ReplaceCharacter {
     }
 }
 
-
-
 // 13. COUNT OCCURRENCES OF A SUBSTRING
 // Question:
 // Count how many times a substring occurs in a String.
@@ -677,7 +577,6 @@ class Q12_ReplaceCharacter {
 // String = banana
 // Substring = ana
 // Answer = 2
-
 
 class Q13_SubstringCount {
     public static void main(String[] args) {
@@ -698,12 +597,9 @@ class Q13_SubstringCount {
     }
 }
 
-
-
 // 14. STRINGBUILDER - INSERT
 // Question:
 // Insert "Java " at the beginning of "Programming".
-
 
 class Q14_StringBuilderInsert {
     public static void main(String[] args) {
@@ -716,13 +612,10 @@ class Q14_StringBuilderInsert {
     }
 }
 
-
-
 // 15. STRINGBUILDER - DELETE
 // Question:
 // Delete characters from index 2 to index 5.
 // Remember: end index is excluded.
-
 
 class Q15_StringBuilderDelete {
     public static void main(String[] args) {
@@ -735,12 +628,9 @@ class Q15_StringBuilderDelete {
     }
 }
 
-
-
 // 16. STRINGBUILDER - setCharAt()
 // Question:
 // Change the first character of "Java" to 'K'.
-
 
 class Q16_SetCharAt {
     public static void main(String[] args) {
@@ -753,12 +643,9 @@ class Q16_SetCharAt {
     }
 }
 
-
-
 // 17. COMPARE TWO STRINGS USING equals()
 // Question:
 // Compare two Strings based on their contents.
-
 
 class Q17_EqualsComparison {
     public static void main(String[] args) {
@@ -773,12 +660,9 @@ class Q17_EqualsComparison {
     }
 }
 
-
-
 // 18. CASE-INSENSITIVE COMPARISON
 // Question:
 // Check whether two Strings are equal ignoring case.
-
 
 class Q18_EqualsIgnoreCase {
     public static void main(String[] args) {
@@ -793,12 +677,9 @@ class Q18_EqualsIgnoreCase {
     }
 }
 
-
-
 // 19. LEXICOGRAPHICAL COMPARISON
 // Question:
 // Compare two Strings using compareTo().
-
 
 class Q19_CompareTo {
     public static void main(String[] args) {
@@ -819,13 +700,10 @@ class Q19_CompareTo {
     }
 }
 
-
-
 // 20. TOGGLE CASE
 // Question:
 // Convert uppercase characters to lowercase and
 // lowercase characters to uppercase.
-
 
 class Q20_ToggleCase {
     public static void main(String[] args) {
@@ -849,12 +727,9 @@ class Q20_ToggleCase {
     }
 }
 
-
-
 // 21. REMOVE DUPLICATE WORDS
 // Question:
 // Remove duplicate words while preserving their original order.
-
 
 class Q21_RemoveDuplicateWords {
     public static void main(String[] args) {
@@ -873,12 +748,9 @@ class Q21_RemoveDuplicateWords {
     }
 }
 
-
-
 // 22. FIND LONGEST WORD
 // Question:
 // Find the longest word in a sentence.
-
 
 class Q22_LongestWord {
     public static void main(String[] args) {
@@ -900,12 +772,9 @@ class Q22_LongestWord {
     }
 }
 
-
-
 // 23. FIND SHORTEST WORD
 // Question:
 // Find the shortest word in a sentence.
-
 
 class Q23_ShortestWord {
     public static void main(String[] args) {
@@ -927,12 +796,9 @@ class Q23_ShortestWord {
     }
 }
 
-
-
 // 24. CHECK IF STRING CONTAINS ONLY DIGITS
 // Question:
 // Check whether a String contains only numeric digits.
-
 
 class Q24_OnlyDigits {
     public static void main(String[] args) {
@@ -954,12 +820,9 @@ class Q24_OnlyDigits {
     }
 }
 
-
-
 // 25. REMOVE VOWELS
 // Question:
 // Remove all vowels from a String.
-
 
 class Q25_RemoveVowels {
     public static void main(String[] args) {
@@ -981,12 +844,9 @@ class Q25_RemoveVowels {
     }
 }
 
-
-
 // 26. STRINGBUILDER APPEND
 // Question:
 // Append numbers 1 to 5 using StringBuilder.
-
 
 class Q26_StringBuilderAppend {
     public static void main(String[] args) {
@@ -1001,12 +861,9 @@ class Q26_StringBuilderAppend {
     }
 }
 
-
-
 // 27. CONVERT STRINGBUILDER TO STRING
 // Question:
 // Convert a StringBuilder object into a String.
-
 
 class Q27_StringBuilderToString {
     public static void main(String[] args) {
@@ -1019,12 +876,9 @@ class Q27_StringBuilderToString {
     }
 }
 
-
-
 // 28. REMOVE SPECIFIC CHARACTER USING STRINGBUILDER
 // Question:
 // Remove every occurrence of character 'a'.
-
 
 class Q28_RemoveCharacter {
     public static void main(String[] args) {
@@ -1043,8 +897,6 @@ class Q28_RemoveCharacter {
     }
 }
 
-
-
 // 29. CHECK STRING ROTATION
 // Question:
 // Check whether one String is a rotation of another.
@@ -1053,22 +905,18 @@ class Q28_RemoveCharacter {
 // waterbottle
 // erbottlewat
 
-
 class Q29_StringRotation {
     public static void main(String[] args) {
 
         String a = "waterbottle";
         String b = "erbottlewat";
 
-        boolean result =
-                a.length() == b.length()
+        boolean result = a.length() == b.length()
                 && (a + a).contains(b);
 
         System.out.println(result);
     }
 }
-
-
 
 // 30. STRING COMPRESSION
 // Question:
@@ -1076,7 +924,6 @@ class Q29_StringRotation {
 //
 // Input : aaabbccccd
 // Output: a3b2c4d1
-
 
 class Q30_StringCompression {
     public static void main(String[] args) {
@@ -1107,12 +954,9 @@ class Q30_StringCompression {
     }
 }
 
-
-
 // 31. COUNT UPPERCASE, LOWERCASE, DIGITS AND SPECIAL CHARACTERS
 // Question:
 // Count uppercase, lowercase, digits and special characters.
-
 
 class Q31_CharacterTypes {
     public static void main(String[] args) {
@@ -1148,12 +992,9 @@ class Q31_CharacterTypes {
     }
 }
 
-
-
 // 32. FIND MOST FREQUENT CHARACTER
 // Question:
 // Find the character with the highest frequency.
-
 
 class Q32_MostFrequentCharacter {
     public static void main(String[] args) {
@@ -1182,17 +1023,13 @@ class Q32_MostFrequentCharacter {
         }
 
         System.out.println(
-            maxChar + " occurs " + maxCount + " times"
-        );
+                maxChar + " occurs " + maxCount + " times");
     }
 }
-
-
 
 // 33. CHECK IF TWO STRINGS ARE EQUAL WITHOUT equals()
 // Question:
 // Compare two Strings character by character.
-
 
 class Q33_ManualStringComparison {
     public static void main(String[] args) {
@@ -1222,12 +1059,9 @@ class Q33_ManualStringComparison {
     }
 }
 
-
-
 // 34. FIND ALL OCCURRENCES OF A CHARACTER
 // Question:
 // Find all indexes where a particular character occurs.
-
 
 class Q34_AllOccurrences {
     public static void main(String[] args) {
@@ -1244,12 +1078,9 @@ class Q34_AllOccurrences {
     }
 }
 
-
-
 // 35. REMOVE A SUBSTRING
 // Question:
 // Remove all occurrences of "java" from a String.
-
 
 class Q35_RemoveSubstring {
     public static void main(String[] args) {
@@ -1262,13 +1093,10 @@ class Q35_RemoveSubstring {
     }
 }
 
-
-
 // 36. CHECK PREFIX AND SUFFIX
 // Question:
 // Check whether a String starts with "Java"
 // and ends with "Programming".
-
 
 class Q36_PrefixSuffix {
     public static void main(String[] args) {
@@ -1280,12 +1108,9 @@ class Q36_PrefixSuffix {
     }
 }
 
-
-
 // 37. FIND SECOND MOST FREQUENT CHARACTER
 // Question:
 // Find the second most frequent character in a String.
-
 
 class Q37_SecondMostFrequent {
     public static void main(String[] args) {
@@ -1335,15 +1160,12 @@ class Q37_SecondMostFrequent {
     }
 }
 
-
-
 // 38. REMOVE CONSECUTIVE DUPLICATES
 // Question:
 // Remove consecutive duplicate characters.
 //
 // Input : aabbccdaa
 // Output: abcda
-
 
 class Q38_RemoveConsecutiveDuplicates {
     public static void main(String[] args) {
@@ -1365,12 +1187,9 @@ class Q38_RemoveConsecutiveDuplicates {
     }
 }
 
-
-
 // 39. REVERSE STRING WITHOUT reverse()
 // Question:
 // Reverse a String without using StringBuilder.reverse().
-
 
 class Q39_ReverseWithoutReverse {
     public static void main(String[] args) {
@@ -1387,12 +1206,9 @@ class Q39_ReverseWithoutReverse {
     }
 }
 
-
-
 // 40. CHECK PALINDROME WITHOUT REVERSE()
 // Question:
 // Check palindrome without using reverse().
-
 
 class Q40_PalindromeWithoutReverse {
     public static void main(String[] args) {
@@ -1423,12 +1239,9 @@ class Q40_PalindromeWithoutReverse {
     }
 }
 
-
-
 // 41. REMOVE ALL OCCURRENCES OF A CHARACTER
 // Question:
 // Remove every occurrence of a given character using StringBuilder.
-
 
 class Q41_RemoveAllOccurrences {
     public static void main(String[] args) {
@@ -1449,12 +1262,9 @@ class Q41_RemoveAllOccurrences {
     }
 }
 
-
-
 // 42. CAPITALIZE FIRST LETTER OF EVERY WORD
 // Question:
 // Capitalize the first letter of every word.
-
 
 class Q42_CapitalizeWords {
     public static void main(String[] args) {
@@ -1468,8 +1278,7 @@ class Q42_CapitalizeWords {
         for (String word : words) {
 
             result.append(
-                Character.toUpperCase(word.charAt(0))
-            );
+                    Character.toUpperCase(word.charAt(0)));
 
             result.append(word.substring(1));
             result.append(" ");
@@ -1479,12 +1288,9 @@ class Q42_CapitalizeWords {
     }
 }
 
-
-
 // 43. CHECK IF STRING CONTAINS ONLY ALPHABETS
 // Question:
 // Check whether a String contains only A-Z or a-z.
-
 
 class Q43_OnlyAlphabets {
     public static void main(String[] args) {
@@ -1506,12 +1312,9 @@ class Q43_OnlyAlphabets {
     }
 }
 
-
-
 // 44. FIND CHARACTER AT A PARTICULAR INDEX
 // Question:
 // Find the character at index 3.
-
 
 class Q44_CharAt {
     public static void main(String[] args) {
@@ -1522,12 +1325,9 @@ class Q44_CharAt {
     }
 }
 
-
-
 // 45. EXTRACT SUBSTRING
 // Question:
 // Extract characters from index 3 to index 7.
-
 
 class Q45_Substring {
     public static void main(String[] args) {
@@ -1538,12 +1338,9 @@ class Q45_Substring {
     }
 }
 
-
-
 // 46. FIND FIRST AND LAST OCCURRENCE
 // Question:
 // Find the first and last occurrence of character 'a'.
-
 
 class Q46_FirstLastIndex {
     public static void main(String[] args) {
@@ -1555,12 +1352,9 @@ class Q46_FirstLastIndex {
     }
 }
 
-
-
 // 47. CONVERT STRING TO UPPERCASE AND LOWERCASE
 // Question:
 // Convert a String to uppercase and lowercase.
-
 
 class Q47_CaseConversion {
     public static void main(String[] args) {
@@ -1572,12 +1366,9 @@ class Q47_CaseConversion {
     }
 }
 
-
-
 // 48. STRINGBUILDER CAPACITY
 // Question:
 // Display the length and capacity of a StringBuilder.
-
 
 class Q48_StringBuilderCapacity {
     public static void main(String[] args) {
@@ -1589,12 +1380,9 @@ class Q48_StringBuilderCapacity {
     }
 }
 
-
-
 // 49. STRINGBUILDER REPLACE
 // Question:
 // Replace characters from index 0 to 4 with "Code".
-
 
 class Q49_StringBuilderReplace {
     public static void main(String[] args) {
@@ -1607,13 +1395,10 @@ class Q49_StringBuilderReplace {
     }
 }
 
-
-
 // 50. STRINGBUILDER MULTIPLE OPERATIONS
 // Question:
 // Perform append, insert, delete, setCharAt and reverse
 // operations on a StringBuilder.
-
 
 class Q50_StringBuilderOperations {
     public static void main(String[] args) {

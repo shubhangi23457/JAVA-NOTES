@@ -8,7 +8,7 @@ public class Multidimensional_Arrays {
         // 1. ONE-DIMENSIONAL ARRAY
         // ==========================================
 
-        int[] numbers = {10, 20, 30, 40, 50};
+        int[] numbers = { 10, 20, 30, 40, 50 };
 
         System.out.println("1D Array:");
 
@@ -16,15 +16,14 @@ public class Multidimensional_Arrays {
             System.out.println(numbers[i]);
         }
 
-
         // ==========================================
         // 2. TWO-DIMENSIONAL ARRAY
         // ==========================================
 
         int[][] matrix = {
-            {1, 2, 3},
-            {4, 5, 6},
-            {7, 8, 9}
+                { 1, 2, 3 },
+                { 4, 5, 6 },
+                { 7, 8, 9 }
         };
 
         System.out.println("\n2D Array:");
@@ -39,16 +38,13 @@ public class Multidimensional_Arrays {
             System.out.println();
         }
 
-
         // ==========================================
         // 3. ACCESSING A PARTICULAR ELEMENT
         // ==========================================
 
         System.out.println(
-            "\nElement at [1][2]: "
-            + matrix[1][2]
-        );
-
+                "\nElement at [1][2]: "
+                        + matrix[1][2]);
 
         // ==========================================
         // 4. MODIFYING 2D ARRAY
@@ -67,15 +63,14 @@ public class Multidimensional_Arrays {
             System.out.println();
         }
 
-
         // ==========================================
         // 5. JAGGED ARRAY
         // ==========================================
 
         int[][] jagged = {
-            {1, 2},
-            {3, 4, 5},
-            {6, 7, 8, 9}
+                { 1, 2 },
+                { 3, 4, 5 },
+                { 6, 7, 8, 9 }
         };
 
         System.out.println("\nJagged Array:");
@@ -90,20 +85,19 @@ public class Multidimensional_Arrays {
             System.out.println();
         }
 
-
         // ==========================================
         // 6. THREE-DIMENSIONAL ARRAY
         // ==========================================
 
         int[][][] cube = {
-            {
-                {1, 2},
-                {3, 4}
-            },
-            {
-                {5, 6},
-                {7, 8}
-            }
+                {
+                        { 1, 2 },
+                        { 3, 4 }
+                },
+                {
+                        { 5, 6 },
+                        { 7, 8 }
+                }
         };
 
         System.out.println("\n3D Array:");
@@ -123,7 +117,6 @@ public class Multidimensional_Arrays {
             System.out.println();
         }
 
-
         // ==========================================
         // 7. PACKAGE + PUBLIC ACCESS
         // ==========================================
@@ -133,10 +126,8 @@ public class Multidimensional_Arrays {
         student.displayInsideClass();
 
         System.out.println(
-            "\nPublic variable: "
-            + student.publicMarks
-        );
-
+                "\nPublic variable: "
+                        + student.publicMarks);
 
         // ==========================================
         // 8. PRIVATE ACCESS
@@ -149,7 +140,6 @@ public class Multidimensional_Arrays {
         // private members cannot be accessed
         // directly outside Student class.
 
-
         // ==========================================
         // 9. DEFAULT ACCESS
         // ==========================================
@@ -158,7 +148,6 @@ public class Multidimensional_Arrays {
         // belongs to a different package:
 
         // System.out.println(student.defaultMarks);
-
 
         // ==========================================
         // 10. PROTECTED ACCESS
@@ -170,7 +159,6 @@ public class Multidimensional_Arrays {
 
         // System.out.println(student.protectedMarks);
 
-
         // ==========================================
         // 11. ACCESSING PRIVATE METHOD INDIRECTLY
         // ==========================================
@@ -179,14 +167,11 @@ public class Multidimensional_Arrays {
     }
 }
 
-
-
 /*
-============================================================
-IMPORTANT CODING QUESTIONS + SOLUTIONS
-============================================================
-*/
-
+ * ============================================================
+ * IMPORTANT CODING QUESTIONS + SOLUTIONS
+ * ============================================================
+ */
 
 // 1. PRINT A 2D ARRAY
 // Question:
@@ -196,9 +181,9 @@ class Q1_Print2DArray {
     public static void main(String[] args) {
 
         int[][] arr = {
-            {1, 2, 3},
-            {4, 5, 6},
-            {7, 8, 9}
+                { 1, 2, 3 },
+                { 4, 5, 6 },
+                { 7, 8, 9 }
         };
 
         for (int i = 0; i < arr.length; i++) {
@@ -213,7 +198,6 @@ class Q1_Print2DArray {
     }
 }
 
-
 // 2. PRINT 2D ARRAY USING ENHANCED FOR LOOP
 // Question:
 // Print all elements of a 2D array using for-each.
@@ -222,9 +206,9 @@ class Q2_EnhancedFor {
     public static void main(String[] args) {
 
         int[][] arr = {
-            {1, 2},
-            {3, 4},
-            {5, 6}
+                { 1, 2 },
+                { 3, 4 },
+                { 5, 6 }
         };
 
         for (int[] row : arr) {
@@ -239,18 +223,16 @@ class Q2_EnhancedFor {
     }
 }
 
-
 // 3. SUM OF ALL ELEMENTS
 // Question:
 // Find the sum of all elements in a 2D array.
- 
 
 class Q3_SumMatrix {
     public static void main(String[] args) {
 
         int[][] arr = {
-            {1, 2, 3},
-            {4, 5, 6}
+                { 1, 2, 3 },
+                { 4, 5, 6 }
         };
 
         int sum = 0;
@@ -267,20 +249,17 @@ class Q3_SumMatrix {
     }
 }
 
-
- 
 // 4. FIND LARGEST ELEMENT
 // Question:
 // Find the largest element in a 2D array.
- 
 
 class Q4_LargestElement {
     public static void main(String[] args) {
 
         int[][] arr = {
-            {10, 25, 3},
-            {45, 6, 17},
-            {8, 90, 12}
+                { 10, 25, 3 },
+                { 45, 6, 17 },
+                { 8, 90, 12 }
         };
 
         int max = arr[0][0];
@@ -299,20 +278,17 @@ class Q4_LargestElement {
     }
 }
 
-
- 
 // 5. FIND SMALLEST ELEMENT
 // Question:
 // Find the smallest element in a 2D array.
- 
 
 class Q5_SmallestElement {
     public static void main(String[] args) {
 
         int[][] arr = {
-            {10, 25, 3},
-            {45, 6, 17},
-            {8, 90, 12}
+                { 10, 25, 3 },
+                { 45, 6, 17 },
+                { 8, 90, 12 }
         };
 
         int min = arr[0][0];
@@ -331,20 +307,17 @@ class Q5_SmallestElement {
     }
 }
 
-
- 
 // 6. ROW SUM
 // Question:
 // Find the sum of every row in a matrix.
- 
 
 class Q6_RowSum {
     public static void main(String[] args) {
 
         int[][] arr = {
-            {1, 2, 3},
-            {4, 5, 6},
-            {7, 8, 9}
+                { 1, 2, 3 },
+                { 4, 5, 6 },
+                { 7, 8, 9 }
         };
 
         for (int i = 0; i < arr.length; i++) {
@@ -361,20 +334,17 @@ class Q6_RowSum {
     }
 }
 
-
- 
 // 7. COLUMN SUM
 // Question:
 // Find the sum of every column in a matrix.
- 
 
 class Q7_ColumnSum {
     public static void main(String[] args) {
 
         int[][] arr = {
-            {1, 2, 3},
-            {4, 5, 6},
-            {7, 8, 9}
+                { 1, 2, 3 },
+                { 4, 5, 6 },
+                { 7, 8, 9 }
         };
 
         int columns = arr[0].length;
@@ -389,26 +359,22 @@ class Q7_ColumnSum {
             }
 
             System.out.println(
-                "Column " + j + " sum = " + sum
-            );
+                    "Column " + j + " sum = " + sum);
         }
     }
 }
 
-
- 
 // 8. MAIN DIAGONAL
 // Question:
 // Find the sum of the main diagonal.
- 
 
 class Q8_MainDiagonal {
     public static void main(String[] args) {
 
         int[][] arr = {
-            {1, 2, 3},
-            {4, 5, 6},
-            {7, 8, 9}
+                { 1, 2, 3 },
+                { 4, 5, 6 },
+                { 7, 8, 9 }
         };
 
         int sum = 0;
@@ -422,20 +388,17 @@ class Q8_MainDiagonal {
     }
 }
 
-
- 
 // 9. SECONDARY DIAGONAL
 // Question:
 // Find the sum of the secondary diagonal.
- 
 
 class Q9_SecondaryDiagonal {
     public static void main(String[] args) {
 
         int[][] arr = {
-            {1, 2, 3},
-            {4, 5, 6},
-            {7, 8, 9}
+                { 1, 2, 3 },
+                { 4, 5, 6 },
+                { 7, 8, 9 }
         };
 
         int n = arr.length;
@@ -450,20 +413,17 @@ class Q9_SecondaryDiagonal {
     }
 }
 
-
- 
 // 10. PRINT MAIN DIAGONAL
 // Question:
 // Print all elements present on the main diagonal.
- 
 
 class Q10_PrintDiagonal {
     public static void main(String[] args) {
 
         int[][] arr = {
-            {1, 2, 3},
-            {4, 5, 6},
-            {7, 8, 9}
+                { 1, 2, 3 },
+                { 4, 5, 6 },
+                { 7, 8, 9 }
         };
 
         for (int i = 0; i < arr.length; i++) {
@@ -473,19 +433,16 @@ class Q10_PrintDiagonal {
     }
 }
 
-
- 
 // 11. TRANSPOSE OF MATRIX
 // Question:
 // Print the transpose of a matrix.
- 
 
 class Q11_Transpose {
     public static void main(String[] args) {
 
         int[][] arr = {
-            {1, 2, 3},
-            {4, 5, 6}
+                { 1, 2, 3 },
+                { 4, 5, 6 }
         };
 
         for (int j = 0; j < arr[0].length; j++) {
@@ -500,24 +457,21 @@ class Q11_Transpose {
     }
 }
 
-
- 
 // 12. MATRIX ADDITION
 // Question:
 // Add two matrices of the same dimensions.
- 
 
 class Q12_MatrixAddition {
     public static void main(String[] args) {
 
         int[][] a = {
-            {1, 2},
-            {3, 4}
+                { 1, 2 },
+                { 3, 4 }
         };
 
         int[][] b = {
-            {5, 6},
-            {7, 8}
+                { 5, 6 },
+                { 7, 8 }
         };
 
         int[][] result = new int[2][2];
@@ -536,24 +490,21 @@ class Q12_MatrixAddition {
     }
 }
 
-
- 
 // 13. MATRIX SUBTRACTION
 // Question:
 // Subtract one matrix from another.
- 
 
 class Q13_MatrixSubtraction {
     public static void main(String[] args) {
 
         int[][] a = {
-            {10, 20},
-            {30, 40}
+                { 10, 20 },
+                { 30, 40 }
         };
 
         int[][] b = {
-            {1, 2},
-            {3, 4}
+                { 1, 2 },
+                { 3, 4 }
         };
 
         int[][] result = new int[2][2];
@@ -572,24 +523,21 @@ class Q13_MatrixSubtraction {
     }
 }
 
-
- 
 // 14. MATRIX MULTIPLICATION
 // Question:
 // Multiply two matrices.
- 
 
 class Q14_MatrixMultiplication {
     public static void main(String[] args) {
 
         int[][] a = {
-            {1, 2},
-            {3, 4}
+                { 1, 2 },
+                { 3, 4 }
         };
 
         int[][] b = {
-            {5, 6},
-            {7, 8}
+                { 5, 6 },
+                { 7, 8 }
         };
 
         int[][] result = new int[a.length][b[0].length];
@@ -617,20 +565,17 @@ class Q14_MatrixMultiplication {
     }
 }
 
-
- 
 // 15. CHECK SYMMETRIC MATRIX
 // Question:
 // Check whether a square matrix is symmetric.
- 
 
 class Q15_SymmetricMatrix {
     public static void main(String[] args) {
 
         int[][] a = {
-            {1, 2, 3},
-            {2, 4, 5},
-            {3, 5, 6}
+                { 1, 2, 3 },
+                { 2, 4, 5 },
+                { 3, 5, 6 }
         };
 
         boolean symmetric = true;
@@ -651,20 +596,17 @@ class Q15_SymmetricMatrix {
     }
 }
 
-
- 
 // 16. SEARCH AN ELEMENT IN 2D ARRAY
 // Question:
 // Search for a given element and print its position.
- 
 
 class Q16_Search2D {
     public static void main(String[] args) {
 
         int[][] arr = {
-            {10, 20, 30},
-            {40, 50, 60},
-            {70, 80, 90}
+                { 10, 20, 30 },
+                { 40, 50, 60 },
+                { 70, 80, 90 }
         };
 
         int target = 50;
@@ -678,8 +620,7 @@ class Q16_Search2D {
                 if (arr[i][j] == target) {
 
                     System.out.println(
-                        "Found at [" + i + "][" + j + "]"
-                    );
+                            "Found at [" + i + "][" + j + "]");
 
                     found = true;
                 }
@@ -691,19 +632,16 @@ class Q16_Search2D {
     }
 }
 
-
- 
 // 17. COUNT EVEN AND ODD ELEMENTS
 // Question:
 // Count even and odd elements in a 2D array.
- 
 
 class Q17_EvenOdd {
     public static void main(String[] args) {
 
         int[][] arr = {
-            {1, 2, 3},
-            {4, 5, 6}
+                { 1, 2, 3 },
+                { 4, 5, 6 }
         };
 
         int even = 0;
@@ -725,20 +663,17 @@ class Q17_EvenOdd {
     }
 }
 
-
- 
 // 18. SUM OF EACH ROW AND FIND MAXIMUM ROW SUM
 // Question:
 // Find which row has the maximum sum.
- 
 
 class Q18_MaxRowSum {
     public static void main(String[] args) {
 
         int[][] arr = {
-            {1, 2, 3},
-            {10, 20, 30},
-            {4, 5, 6}
+                { 1, 2, 3 },
+                { 10, 20, 30 },
+                { 4, 5, 6 }
         };
 
         int maxSum = Integer.MIN_VALUE;
@@ -765,22 +700,19 @@ class Q18_MaxRowSum {
     }
 }
 
-
- 
 // 19. JAGGED ARRAY
 // Question:
 // Create and print a jagged array where every row has
 // a different number of elements.
- 
 
 class Q19_JaggedArray {
     public static void main(String[] args) {
 
         int[][] arr = new int[3][];
 
-        arr[0] = new int[]{1, 2};
-        arr[1] = new int[]{3, 4, 5};
-        arr[2] = new int[]{6, 7, 8, 9};
+        arr[0] = new int[] { 1, 2 };
+        arr[1] = new int[] { 3, 4, 5 };
+        arr[2] = new int[] { 6, 7, 8, 9 };
 
         for (int[] row : arr) {
 
@@ -794,20 +726,17 @@ class Q19_JaggedArray {
     }
 }
 
-
- 
 // 20. SPIRAL MATRIX
 // Question:
 // Print a matrix in spiral order.
- 
 
 class Q20_SpiralMatrix {
     public static void main(String[] args) {
 
         int[][] a = {
-            {1, 2, 3},
-            {4, 5, 6},
-            {7, 8, 9}
+                { 1, 2, 3 },
+                { 4, 5, 6 },
+                { 7, 8, 9 }
         };
 
         int top = 0;
@@ -850,20 +779,17 @@ class Q20_SpiralMatrix {
     }
 }
 
-
- 
 // 21. ROTATE MATRIX 90 DEGREES
 // Question:
 // Rotate a square matrix 90 degrees clockwise.
- 
 
 class Q21_RotateMatrix {
     public static void main(String[] args) {
 
         int[][] a = {
-            {1, 2, 3},
-            {4, 5, 6},
-            {7, 8, 9}
+                { 1, 2, 3 },
+                { 4, 5, 6 },
+                { 7, 8, 9 }
         };
 
         int n = a.length;
@@ -903,20 +829,17 @@ class Q21_RotateMatrix {
     }
 }
 
-
- 
 // 22. CHECK IDENTITY MATRIX
 // Question:
 // Check whether a square matrix is an identity matrix.
- 
 
 class Q22_IdentityMatrix {
     public static void main(String[] args) {
 
         int[][] a = {
-            {1, 0, 0},
-            {0, 1, 0},
-            {0, 0, 1}
+                { 1, 0, 0 },
+                { 0, 1, 0 },
+                { 0, 0, 1 }
         };
 
         boolean identity = true;
@@ -937,21 +860,18 @@ class Q22_IdentityMatrix {
     }
 }
 
-
- 
 // 23. FIND SUM OF BOUNDARY ELEMENTS
 // Question:
 // Find the sum of all boundary elements of a matrix.
- 
 
 class Q23_BoundarySum {
     public static void main(String[] args) {
 
         int[][] a = {
-            {1, 2, 3, 4},
-            {5, 6, 7, 8},
-            {9, 10, 11, 12},
-            {13, 14, 15, 16}
+                { 1, 2, 3, 4 },
+                { 5, 6, 7, 8 },
+                { 9, 10, 11, 12 },
+                { 13, 14, 15, 16 }
         };
 
         int sum = 0;
@@ -964,9 +884,9 @@ class Q23_BoundarySum {
             for (int j = 0; j < cols; j++) {
 
                 if (i == 0 ||
-                    i == rows - 1 ||
-                    j == 0 ||
-                    j == cols - 1) {
+                        i == rows - 1 ||
+                        j == 0 ||
+                        j == cols - 1) {
 
                     sum += a[i][j];
                 }
@@ -977,20 +897,17 @@ class Q23_BoundarySum {
     }
 }
 
-
- 
 // 24. COUNT OCCURRENCE OF AN ELEMENT
 // Question:
 // Count how many times a target occurs in a 2D array.
- 
 
 class Q24_CountElement {
     public static void main(String[] args) {
 
         int[][] a = {
-            {1, 2, 2},
-            {3, 2, 4},
-            {2, 5, 2}
+                { 1, 2, 2 },
+                { 3, 2, 4 },
+                { 2, 5, 2 }
         };
 
         int target = 2;
@@ -1009,19 +926,16 @@ class Q24_CountElement {
     }
 }
 
-
- 
 // 25. DEEP COPY OF 2D ARRAY
 // Question:
 // Create an independent copy of a 2D array.
- 
 
 class Q25_DeepCopy {
     public static void main(String[] args) {
 
         int[][] original = {
-            {1, 2},
-            {3, 4}
+                { 1, 2 },
+                { 3, 4 }
         };
 
         int[][] copy = new int[original.length][];
@@ -1038,8 +952,6 @@ class Q25_DeepCopy {
     }
 }
 
-
- 
 // 26. PACKAGE EXAMPLE
 // Question:
 // Create a class inside a custom package and access it
@@ -1049,15 +961,14 @@ class Q25_DeepCopy {
 //
 // package college;
 // public class Student {
-//     public void display() {
-//         System.out.println("Student class");
-//     }
+// public void display() {
+// System.out.println("Student class");
+// }
 // }
 //
 // File 2: Main.java
 //
 // import college.Student;
- 
 
 // Student.java
 //
@@ -1065,11 +976,10 @@ class Q25_DeepCopy {
 //
 // public class Student {
 //
-//     public void display() {
-//         System.out.println("Student class");
-//     }
+// public void display() {
+// System.out.println("Student class");
 // }
-
+// }
 
 // Main.java
 //
@@ -1077,21 +987,18 @@ class Q25_DeepCopy {
 //
 // public class Main {
 //
-//     public static void main(String[] args) {
+// public static void main(String[] args) {
 //
-//         Student s = new Student();
+// Student s = new Student();
 //
-//         s.display();
-//     }
+// s.display();
+// }
 // }
 
-
- 
 // 27. PRIVATE ACCESS MODIFIER
 // Question:
 // Demonstrate that private data can only be accessed through
 // methods of the same class.
- 
 
 class Q27_PrivateAccess {
 
@@ -1114,15 +1021,12 @@ class Q27_PrivateAccess {
     }
 }
 
-
- 
 // 28. DEFAULT ACCESS MODIFIER
 // Question:
 // Demonstrate package-private/default access.
 //
 // Members with no explicit modifier can be accessed
 // by classes in the same package.
- 
 
 class Q28_DefaultAccess {
 
@@ -1143,18 +1047,14 @@ class Q28_DefaultAccess {
     }
 }
 
-
- 
 // 29. PROTECTED ACCESS MODIFIER
 // Question:
 // Demonstrate protected member access through inheritance.
- 
 
 class Q29_ProtectedAccess {
 
     protected int value = 50;
 }
-
 
 // Subclass can access protected member
 class Q29_Child extends Q29_ProtectedAccess {
@@ -1172,12 +1072,9 @@ class Q29_Child extends Q29_ProtectedAccess {
     }
 }
 
-
- 
 // 30. PUBLIC ACCESS MODIFIER
 // Question:
 // Demonstrate public member access.
- 
 
 class Q30_PublicAccess {
 
@@ -1198,13 +1095,10 @@ class Q30_PublicAccess {
     }
 }
 
-
- 
 // 31. ENCAPSULATION USING PRIVATE VARIABLES
 // Question:
 // Create private variables and access them using
 // public getter and setter methods.
- 
 
 class Q31_Encapsulation {
 
@@ -1232,12 +1126,9 @@ class Q31_Encapsulation {
     }
 }
 
-
- 
 // 32. ACCESS MODIFIER COMBINATION
 // Question:
 // Demonstrate all four access levels inside a class.
- 
 
 class Q32_AllAccessModifiers {
 
@@ -1259,25 +1150,20 @@ class Q32_AllAccessModifiers {
 
     public static void main(String[] args) {
 
-        Q32_AllAccessModifiers obj =
-            new Q32_AllAccessModifiers();
+        Q32_AllAccessModifiers obj = new Q32_AllAccessModifiers();
 
         obj.display();
     }
 }
 
-
- 
 // 33. ACCESSING PUBLIC MEMBER FROM ANOTHER CLASS
 // Question:
 // Access a public variable from another class.
- 
 
 class Q33_PublicClass {
 
     public int number = 100;
 }
-
 
 class Q33_Main {
 
@@ -1289,18 +1175,14 @@ class Q33_Main {
     }
 }
 
-
- 
 // 34. PROTECTED MEMBER THROUGH SUBCLASS
 // Question:
 // Access a protected member through inheritance.
- 
 
 class Q34_Parent {
 
     protected int x = 10;
 }
-
 
 class Q34_Child extends Q34_Parent {
 
@@ -1312,12 +1194,9 @@ class Q34_Child extends Q34_Parent {
     }
 }
 
-
- 
 // 35. PRIVATE MEMBER THROUGH METHOD
 // Question:
 // Access a private variable using a public method.
- 
 
 class Q35_PrivateThroughMethod {
 
@@ -1330,15 +1209,12 @@ class Q35_PrivateThroughMethod {
 
     public static void main(String[] args) {
 
-        Q35_PrivateThroughMethod obj =
-            new Q35_PrivateThroughMethod();
+        Q35_PrivateThroughMethod obj = new Q35_PrivateThroughMethod();
 
         System.out.println(obj.getX());
     }
 }
 
-
- 
 // 36. PACKAGE + ACCESS MODIFIER EXAMPLE
 // Question:
 // Create a package with a public class and access it from
@@ -1350,9 +1226,9 @@ class Q35_PrivateThroughMethod {
 //
 // public class Student {
 //
-//     public void display() {
-//         System.out.println("Hello Student");
-//     }
+// public void display() {
+// System.out.println("Hello Student");
+// }
 // }
 //
 // File: p2/Main.java
@@ -1363,29 +1239,25 @@ class Q35_PrivateThroughMethod {
 //
 // public class Main {
 //
-//     public static void main(String[] args) {
+// public static void main(String[] args) {
 //
-//         Student s = new Student();
+// Student s = new Student();
 //
-//         s.display();
-//     }
+// s.display();
 // }
- 
+// }
 
-
- 
 // 37. FIND MAXIMUM ELEMENT IN EACH ROW
 // Question:
 // Find the maximum element of every row.
- 
 
 class Q37_MaxEachRow {
     public static void main(String[] args) {
 
         int[][] a = {
-            {1, 8, 3},
-            {9, 2, 5},
-            {4, 7, 6}
+                { 1, 8, 3 },
+                { 9, 2, 5 },
+                { 4, 7, 6 }
         };
 
         for (int i = 0; i < a.length; i++) {
@@ -1399,26 +1271,22 @@ class Q37_MaxEachRow {
             }
 
             System.out.println(
-                "Maximum of row " + i + " = " + max
-            );
+                    "Maximum of row " + i + " = " + max);
         }
     }
 }
 
-
- 
 // 38. FIND MINIMUM ELEMENT IN EACH COLUMN
 // Question:
 // Find the minimum element in every column.
- 
 
 class Q38_MinEachColumn {
     public static void main(String[] args) {
 
         int[][] a = {
-            {8, 2, 7},
-            {3, 9, 4},
-            {6, 1, 5}
+                { 8, 2, 7 },
+                { 3, 9, 4 },
+                { 6, 1, 5 }
         };
 
         int columns = a[0].length;
@@ -1434,27 +1302,23 @@ class Q38_MinEachColumn {
             }
 
             System.out.println(
-                "Minimum of column " + j + " = " + min
-            );
+                    "Minimum of column " + j + " = " + min);
         }
     }
 }
 
-
- 
 // 39. CHECK SPARSE MATRIX
 // Question:
 // Check whether the number of zero elements is greater
 // than the number of non-zero elements.
- 
 
 class Q39_SparseMatrix {
     public static void main(String[] args) {
 
         int[][] a = {
-            {0, 0, 3},
-            {0, 0, 0},
-            {4, 0, 0}
+                { 0, 0, 3 },
+                { 0, 0, 0 },
+                { 4, 0, 0 }
         };
 
         int zero = 0;
@@ -1478,20 +1342,17 @@ class Q39_SparseMatrix {
     }
 }
 
-
- 
 // 40. SORT EACH ROW
 // Question:
 // Sort every row of a 2D array independently.
- 
 
 class Q40_SortEachRow {
     public static void main(String[] args) {
 
         int[][] a = {
-            {5, 2, 8},
-            {9, 1, 3},
-            {7, 6, 4}
+                { 5, 2, 8 },
+                { 9, 1, 3 },
+                { 7, 6, 4 }
         };
 
         for (int i = 0; i < a.length; i++) {

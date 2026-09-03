@@ -2,6 +2,8 @@
 // NOTES
 // ================================
 
+import java.util.Arrays;
+import java.util.LinkedHashSet;
 
 public class Strings {
 
@@ -236,6 +238,7 @@ public class Strings {
 
 
         // 17. STRINGBUILDER
+        // String Builder has a capacity of 16 characters
 
         StringBuilder sb = new StringBuilder();
 
